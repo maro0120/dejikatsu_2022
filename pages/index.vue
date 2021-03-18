@@ -3,6 +3,7 @@
     <div class="header mt-5">
       <Hero />
       <Social />
+      <full-calendar v-bind:event="items"/>
     </div>
 
     <div class="mt-16">
@@ -40,7 +41,7 @@
   import Social from '../components/Social.vue'
   import Projects from '../components/Projects.vue'
   import TechStack from '../components/TechStack.vue'
-  
+  import axios from 'axios';
 
     export default {
       components:{
@@ -51,6 +52,36 @@
           script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
         };
       },
+      data() {
+        return {
+          items: []
+        };
+      },
+      async asyncData({ $config }) {
+        const { data } = await axios.get(
+          $config.baseUrl,
+          {
+            headers: { "X-API-KEY": $config.apiKey }
+          }
+        );
+        const events = []
+        for (var i=0; i < data.contents.length ; ++i){
+          let ev = {
+            id : i,
+            title : data.contents[i]['title'],
+            start : data.contents[i]['eventDate']
+          }
+          events.push(ev)
+        }
+        // data.contents.forEach(event => {
+        //   Object.keys(event).forEach(key => {
+        //     console.log(`key: ${key} value: ${event[key]}`)
+        //   })
+        // })
+        return {
+          items: events
+        };
+      }
     };
 </script>
 

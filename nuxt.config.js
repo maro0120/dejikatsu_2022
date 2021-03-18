@@ -1,6 +1,12 @@
+// require('dotenv').config()
+// const { MICROCMS_API_KEY } = process.env.MICROCMS_API_KEY
+// const { MICROCMS_API_URL } = process.env.MICROCMS_API_URL
+// const isDev = process.env.NODE_ENV === 'development'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+  ssr: 'false',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -22,6 +28,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '~/plugins/full-calendar', ssr: false },
+    // { src: '~/plugins/microcms' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -31,14 +39,32 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/composition-api',
+    // '@nuxt/typescript-build',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/axios',
+    // '@nuxt/http',
   ],
+  axios: {
+    // proxyHeaders: false
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+    //transpile: /@fullcalendar.*/ // transpile ESM modules within all fullcalendar packages
+  },
+  privateRuntimeConfig: {
+    apiKey: process.env.MICROCMS_API_KEY,
+    baseUrl: process.env.MICROCMS_API_URL
+  },
+  publicRuntimeConfig: {
+    apiKey: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_KEY : undefined,
+    baseUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_URL : undefined
+  },
+  // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'apikey': MICROCMS_API_KEY },
+  // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'baseUrl': MICROCMS_API_URL },
 }

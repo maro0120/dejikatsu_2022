@@ -4,6 +4,7 @@
       <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">I am a Full Stack Software Developer</h2>
       <h4 class="text-lg lg:text-xl font-semibold">I build beautiful websites and web apps.</h4>
   </div>
+  </div>
 </template>
 
 <script>

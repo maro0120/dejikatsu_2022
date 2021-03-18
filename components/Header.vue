@@ -1,5 +1,5 @@
 <template>
-  <div>
+    <div class="bg-cover h-screen w-full" :style="{'background-image': `url(${require('@/assets/pexels-pixabay-461060.jpg')})`}">
     <nav class="wrapper py-6">
       <div class="px-10 flex justify-between items-center">
           <div class="logo">
