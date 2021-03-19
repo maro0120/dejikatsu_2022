@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{items:[{id:0,title:"ssg",start:"2021-02-28T15:00:00.000Z"},{id:1,title:"予定3",start:"2021-03-13T06:30:00.000Z"},{id:2,title:"予定2",start:"2021-03-11T04:45:00.461Z"},{id:3,title:"予定1",start:"2021-03-11T02:00:00.000Z"}]}],fetch:{},mutations:void 0});
