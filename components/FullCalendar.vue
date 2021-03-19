@@ -53,10 +53,10 @@ export default {
         initialView: 'dayGridMonth',
         initialEvents: this.event,
         locale:jaLocale,
-        editable: true,
-        selectable: true,
+        editable: false,
+        selectable: false,
         selectMirror: true,
-        dayMaxEvents: true,
+        dayMaxEvents: false,
         weekends: true,
         select: this.handleDateSelect,
         eventsSet: this.handleEvents,
@@ -67,6 +67,12 @@ export default {
         eventChange:
         eventRemove:
         */
+        contentHeight: 'auto',
+        eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
+        displayEventTime: false,
+        eventDisplay: "block",
+        eventTextColor: "black",
+        eventBorderColor: "white"
       },
     }
   },

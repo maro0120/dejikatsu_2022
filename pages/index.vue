@@ -66,10 +66,29 @@
         );
         const events = []
         for (var i=0; i < data.contents.length ; ++i){
+          let colors = ""
+          switch(data.contents[i]['color'][0]) {
+            case "紫":
+              colors = '#FF99FF'
+              break;
+            case "オレンジ":
+              colors = '#FF9933'
+              break;
+            case "青":
+              colors = '#66CCFF'
+              break;
+            case "緑":
+              colors = '#66CC66'
+              break;
+            default:
+              colors = '#F0F0F0'
+              break;
+          }
           let ev = {
             id : i,
             title : data.contents[i]['title'],
-            start : data.contents[i]['eventDate']
+            start : data.contents[i]['eventDate'],
+            backgroundColor : colors
           }
           events.push(ev)
         }
