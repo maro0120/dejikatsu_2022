@@ -18,7 +18,7 @@ import interactionPlugin from '@fullcalendar/interaction'
 import timeGridPlugin from "@fullcalendar/timegrid";
 import jaLocale from "@fullcalendar/core/locales/ja"
 import swal from 'sweetalert';
-// import moment from "moment";
+import moment from "moment";
 
 // const INITIAL_EVENTS = [
 //   {
@@ -81,7 +81,7 @@ export default {
     handleWeekendsToggle() {},
     handleDateSelect(selectInfo) {},
     handleEventClick(clickInfo) {
-      // swal('時間: ' + moment(clickInfo.event.start).format("YYYY/MM/DD HH:mm") + '\n場所: ' + clickInfo.event.title)
+      swal('時間: ' + moment(clickInfo.event.start).format("YYYY/MM/DD HH:mm") + '\n場所: ' + clickInfo.event.title)
       // alert('Coordinates: ' + clickInfo.jsEvent.pageX + ',' + clickInfo.jsEvent.pageY)
       // alert('View: ' + clickInfo.view.type)
       // change the border color just for fun
