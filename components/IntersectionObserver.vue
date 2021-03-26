@@ -30,7 +30,7 @@ mounted() {
     // else {
     //   this.isIntersectingElement = false
     // }
-    if ( 200 > elmRectCoor.bottom ) {
+    if ( 0 > elmRectCoor.bottom ) {
         this.isIntersectingElement = true
     }
     else {

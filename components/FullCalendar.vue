@@ -92,6 +92,9 @@ export default {
 </script>
 <style>
 .fc-event-main {
-    white-space: normal;
+  white-space: normal;
+}
+.fc-scrollgrid-section-header {
+  background-color: #BF5B04;
 }
 </style>

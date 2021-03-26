@@ -2,10 +2,9 @@
   <div class="wrapper-small md:px-10">
     <div class="header mt-5">
       <Hero />
-      <intersection-observer
-        sentinal-name="sentinal-name"
-        @on-intersection-element="onIntersectionElement"
-      ></intersection-observer>
+      <!--<intersection-observer-->
+      <!--  sentinal-name="sentinal-name"-->
+      <!--  @on-intersection-element="onIntersectionElement"></intersection-observer>-->
       <Social />
       <full-calendar v-bind:event="items"/>
     </div>
@@ -64,11 +63,11 @@
       },
       methods: {
         onIntersectionElement(value) {
-          if( value ){
-            document.querySelector('nav').classList.add("bg-white")
-          } else {
-            document.querySelector('nav').classList.remove("bg-white")
-          }
+          // if( value ){
+          //   document.querySelector('nav').classList.add("bg-white")
+          // } else {
+          //   document.querySelector('nav').classList.remove("bg-white")
+          // }
         },
       },
       async asyncData({ $config }) {
