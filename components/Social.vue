@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper text-center">
+  <div class="wrapper text-center" nav="false">
       <a class="social-link hover:text-primary" href="#"  aria-label="Github">
         <i class='bx bxl-github'></i>
       </a>
