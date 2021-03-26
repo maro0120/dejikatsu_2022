@@ -2,6 +2,10 @@
   <div class="wrapper-small md:px-10">
     <div class="header mt-5">
       <Hero />
+      <intersection-observer
+        sentinal-name="sentinal-name"
+        @on-intersection-element="onIntersectionElement"
+      ></intersection-observer>
       <Social />
       <full-calendar v-bind:event="items"/>
     </div>
@@ -42,10 +46,11 @@
   import Projects from '../components/Projects.vue'
   import TechStack from '../components/TechStack.vue'
   import axios from 'axios';
+  import IntersectionObserver from "../components/IntersectionObserver";
 
     export default {
       components:{
-        Hero, Social, Projects, TechStack
+        Hero, Social, Projects, TechStack, IntersectionObserver
       },
       // head() {
       //   return {
@@ -56,6 +61,15 @@
         return {
           items: []
         };
+      },
+      methods: {
+        onIntersectionElement(value) {
+          if( value ){
+            document.querySelector('nav').classList.add("bg-white")
+          } else {
+            document.querySelector('nav').classList.remove("bg-white")
+          }
+        },
       },
       async asyncData({ $config }) {
         const { data } = await axios.get(

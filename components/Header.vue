@@ -135,30 +135,30 @@ export default {
     document.addEventListener("keydown", e => {
       if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
     });
-    const options = {
-     root: document.querySelector('[nav="false"]'),
-    // rootMargin: "0px 0px -150px",
-     threshold: 0
-    }
-    const images = document.querySelectorAll('nav')
-    images.forEach((target) => this.onIntersect(target, options))
+    // const options = {
+    //   root: document.querySelector('nav'),
+    //   rootMargin: "500px 0px",
+    //   threshold: 0
+    // }
+    // const images = document.querySelectorAll('nav')
+    // images.forEach((target) => this.onIntersect(target, options))
   },
   methods: {
     drawer() {
       this.isOpen = !this.isOpen;
     },
-    onIntersect(target, options = {}) {
-      const observer = new IntersectionObserver(this.addShowClass, options)
-      // 監視したい要素をobserveする。
-      observer.observe(target)
-    },
-    addShowClass(entries) {
-     for(const e of entries) {
-       if (e.isIntersecting) {
-         e.target.classList.add("bg-white")
-       }
-     }
-    }
+    // onIntersect(target, options = {}) {
+    //   const observer = new IntersectionObserver(this.addShowClass, options)
+    //   // 監視したい要素をobserveする。
+    //   observer.observe(target)
+    // },
+    // addShowClass(entries) {
+    // for(const e of entries) {
+    //   if (e.isIntersecting) {
+    //     e.target.classList.add("bg-white")
+    //   }
+    // }
+    // }
   },
   watch: {
     isOpen: {
