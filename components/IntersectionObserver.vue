@@ -24,18 +24,20 @@ mounted() {
   const sentinal = this.$refs[this.sentinalName]
   const handler = (entries) => {
     const elmRectCoor = entries[0].target.getBoundingClientRect();
-    // if (entries[0].isIntersecting) {
-    //   this.isIntersectingElement = true
-    // } 
-    // else {
-    //   this.isIntersectingElement = false
-    // }
-    if ( 0 > elmRectCoor.bottom ) {
-        this.isIntersectingElement = true
-    }
+    if (entries[0].isIntersecting) {
+      this.isIntersectingElement = true
+      // console.log(sentinal)
+    } 
     else {
-        this.isIntersectingElement = false
+      this.isIntersectingElement = false
+      // console.log("False")
     }
+    // if ( 0 > elmRectCoor.bottom ) {
+    //     this.isIntersectingElement = true
+    // }
+    // else {
+    //     this.isIntersectingElement = false
+    // }
   }
   const observer = new window.IntersectionObserver(handler)
   observer.observe(sentinal)

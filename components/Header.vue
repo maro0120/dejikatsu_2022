@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-cover h-screen w-full" :style="{'background-image': `url(${require('@/assets/pexels-pixabay-461060.jpg')})`}">
-  <nav class="fixed w-full p-6 bg-transparent z-50 bg-brown">
+
+  <nav class="fixed w-full p-3 bg-transparent z-50 bg-brown">
     <div class="flex items-center justify-between">
 
       <!-- Header logo -->
@@ -121,7 +121,6 @@
 
     </div>
   </nav>
-  </div>
 </template>
 
 <script>

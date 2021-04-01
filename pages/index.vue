@@ -1,7 +1,10 @@
 <template>
+  <div>
+  <Hero />
   <div class="wrapper-small md:px-10">
+    
     <div class="header mt-5">
-      <Hero />
+      
       <!--<intersection-observer-->
       <!--  sentinal-name="sentinal-name"-->
       <!--  @on-intersection-element="onIntersectionElement"></intersection-observer>-->
@@ -37,6 +40,7 @@
 
 
   </div>
+  </div>
 </template>
 
 <script>
@@ -44,8 +48,8 @@
   import Social from '../components/Social.vue'
   import Projects from '../components/Projects.vue'
   import TechStack from '../components/TechStack.vue'
-  import axios from 'axios';
-  import IntersectionObserver from "../components/IntersectionObserver";
+  import axios from 'axios'
+  import IntersectionObserver from "../components/IntersectionObserver"
 
     export default {
       components:{
@@ -83,19 +87,19 @@
           switch(data.contents[i]['color'][0]) {
             case "紫":
               colors = '#FF99FF'
-              break;
+              break
             case "オレンジ":
               colors = '#FF9933'
-              break;
+              break
             case "青":
               colors = '#66CCFF'
-              break;
+              break
             case "緑":
               colors = '#66CC66'
-              break;
+              break
             default:
               colors = '#F0F0F0'
-              break;
+              break
           }
           let ev = {
             id : i,
@@ -105,11 +109,6 @@
           }
           events.push(ev)
         }
-        // data.contents.forEach(event => {
-        //   Object.keys(event).forEach(key => {
-        //     console.log(`key: ${key} value: ${event[key]}`)
-        //   })
-        // })
         return {
           items: events
         };

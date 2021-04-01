@@ -1,8 +1,10 @@
 <template>
   <div class="flex flex-col h-screen justify-between">
-    <div class="">
-      <Header />
-    </div>
+    <transition
+      name="headerNav"
+    >
+      <Header v-show="isShow" />
+    </transition>
     <div class="mb-auto">
       <Nuxt />
     </div>
@@ -24,4 +26,45 @@
   .flex-center{
     @apply flex justify-center items-center;
   }
+  .headerNav-enter-active, .headerNav-leave-active {
+    transition: opacity .5s;
+  }
+  .headerNav-enter, .headerNav-leave-to {
+    opacity: 0;
+  }
 </style>
+<script>
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+export default {
+  components: {
+    Header,
+    Footer
+  },
+  data () {
+    return {
+      scrollY: 0,
+      isShow: true
+    }
+  },
+  mounted () {
+    // スクロールイベントを取得
+    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('load', () => {
+      this.onScroll()
+    })
+  },
+  watch: {
+    // 上にスクロールした時に表示
+    scrollY (newValue, oldValue) {
+      this.$set(this, 'isShow', newValue < oldValue)
+    }
+  },
+  methods: {
+    // スクロール値の取得
+    onScroll () {
+      this.$set(this, 'scrollY', window.pageYOffset)
+    }
+  }
+}
+</script>
