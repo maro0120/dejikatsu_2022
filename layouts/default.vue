@@ -31,6 +31,7 @@
   }
   .headerNav-enter, .headerNav-leave-to {
     opacity: 0;
+    pointer-events: none;
   }
 </style>
 <script>
@@ -50,6 +51,11 @@ export default {
   mounted () {
     // スクロールイベントを取得
     window.addEventListener('scroll', this.onScroll)
+    // window.addEventListener('scroll', () => {
+				// if( 200 < window.scrollY ) {
+				//   this.onScroll()
+				// }
+    // })
     window.addEventListener('load', () => {
       this.onScroll()
     })
@@ -63,6 +69,7 @@ export default {
   methods: {
     // スクロール値の取得
     onScroll () {
+      // alert(window.scrollY)
       this.$set(this, 'scrollY', window.pageYOffset)
     }
   }
