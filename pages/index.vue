@@ -21,6 +21,9 @@
         <div>
           <Projects />
         </div>
+        <div>
+          <Information />
+        </div>
     </div>
 
     
@@ -47,6 +50,7 @@
   import Hero from '../components/Hero.vue'
   import Social from '../components/Social.vue'
   import Projects from '../components/Projects.vue'
+  import Information from '../components/Information.vue'
   import TechStack from '../components/TechStack.vue'
   import axios from 'axios'
   import IntersectionObserver from "../components/IntersectionObserver"

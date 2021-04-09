@@ -59,11 +59,13 @@ export default {
   },
   privateRuntimeConfig: {
     apiKey: process.env.MICROCMS_API_KEY,
-    baseUrl: process.env.MICROCMS_API_URL
+    baseUrl: process.env.MICROCMS_API_URL,
+    newsUrl: process.env.MICROCMS_NEWS_URL
   },
   publicRuntimeConfig: {
     apiKey: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_KEY : undefined,
-    baseUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_URL : undefined
+    baseUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_URL : undefined,
+    newsUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_NEWS_URL : undefined
   },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'apikey': MICROCMS_API_KEY },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'baseUrl': MICROCMS_API_URL },

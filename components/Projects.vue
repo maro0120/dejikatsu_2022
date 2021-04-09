@@ -1,3 +1,4 @@
+
 <template>
   <div class="wrapper-small my-5">
     <div class="project-card md:flex mt-8 opacity-0"
@@ -22,7 +23,7 @@
     </div>
     <intersection-observer
       sentinal-name="sentinal-name"
-      @on-intersection-element="onIntersectionElement">
+      v-model="isIntersectingElement">
     </intersection-observer>
     <div class="project-card md:flex mt-16 fiu"
     :class="{
@@ -46,7 +47,7 @@
     </div>
     <intersection-observer
       sentinal-name="sentinal-name"
-      @on-intersection-element="onIntersectionElement1">
+      v-model="isIntersectingElement1">
     </intersection-observer>
   </div>
 </template>
@@ -61,33 +62,34 @@ import IntersectionObserver from "../components/IntersectionObserver"
       return {
         isIntersectingElement: false,
         isIntersectingElement1: false,
+        flag: [],
       };
     },
-    methods: {
-      onIntersectionElement(value) {
-        this.isIntersectingElement = value;
-        console.log('1')
-        // let target = document.querySelectorAll('.project-card')
-        // console.log(target.length)
-        // for(let i = 0; i < target.length; i++){
-        //   if( value ){
-        //     target[i].classList.add("fadeInUp")
-        //     console.log(target[i])
-        //   } else {
-        //     target[i].classList.remove("fadeInUp")
-        //   }
-        // }
-        // if( value ){
-        //   document.querySelector('.project-card').classList.add("fadeInUp")
-        // } else {
-        //   document.querySelector('.project-card').classList.remove("fadeInUp")
-        // }
-      },
-      onIntersectionElement1(value) {
-        this.isIntersectingElement1 = value
-        console.log('2')
-      }
-    },
+    // methods: {
+    //   onIntersectionElement(value) {
+    //     this.isIntersectingElement = value;
+    //     console.log('1')
+    //     // let target = document.querySelectorAll('.project-card')
+    //     // console.log(target.length)
+    //     // for(let i = 0; i < target.length; i++){
+    //     //   if( value ){
+    //     //     target[i].classList.add("fadeInUp")
+    //     //     console.log(target[i])
+    //     //   } else {
+    //     //     target[i].classList.remove("fadeInUp")
+    //     //   }
+    //     // }
+    //     // if( value ){
+    //     //   document.querySelector('.project-card').classList.add("fadeInUp")
+    //     // } else {
+    //     //   document.querySelector('.project-card').classList.remove("fadeInUp")
+    //     // }
+    //   },
+    //   onIntersectionElement1(value) {
+    //     this.isIntersectingElement1 = value
+    //     console.log('2')
+    //   }
+    // },
   }
 </script>
 

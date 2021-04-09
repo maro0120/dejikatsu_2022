@@ -3,7 +3,9 @@
     <transition
       name="headerNav"
     >
-      <Header v-show="isShow" />
+      <!--<div class="mb-auto"  >-->
+        <Header v-show="isShow" />
+      <!--</div>-->
     </transition>
     <div class="mb-auto">
       <Nuxt />
@@ -52,7 +54,7 @@ export default {
     // スクロールイベントを取得
     window.addEventListener('scroll', this.onScroll)
     // window.addEventListener('scroll', () => {
-				// if( 200 < window.scrollY ) {
+				// if( 30 < window.scrollY ) {
 				//   this.onScroll()
 				// }
     // })
