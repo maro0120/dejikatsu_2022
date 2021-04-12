@@ -33,27 +33,34 @@
 export default {
   data () {
     return {
-      items: ''
+      items: ""
     }
   },
-  mounted() {
-    this.asyncData()
-  },
-  methods: {
-    asyncData () {
-      this.$axios.get(this.$config.newsUrl,{
+  // mounted() {
+  //   this.asyncData()
+  // },
+  // methods: {
+  //   asyncData () {
+  //     this.$axios.get(this.$config.newsUrl,{
+  //       headers: { 'X-API-KEY': this.$config.apiKey }
+  //     })
+  //     .then(res =>{
+  //       console.log(res)
+  //       this.items= res.data.contents
+  //     })
+  //     .catch(error=>{
+  //       //失敗した時の処理
+  //       console.log('this.$config.newsUrl:' + this.$config.newsUrl)
+  //       console.log('this.$config.apiKey:' + this.$config.apiKey)
+  //     })
+  //   }
+  // },
+  async fetch() {
+    const data = await this.$axios.get(this.$config.newsUrl,{
         headers: { 'X-API-KEY': this.$config.apiKey }
       })
-      .then(res =>{
-        console.log(res)
-        this.items= res.data.contents
-      })
-      .catch(error=>{
-        //失敗した時の処理
-        console.log('this.$config.newsUrl:' + this.$config.newsUrl)
-        console.log('this.$config.apiKey:' + this.$config.apiKey)
-      })
-    }
-  }
+    this.item = data.data.contents
+    // console.log(data.data.contents)
+  }, 
 }
 </script>
