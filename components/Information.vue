@@ -59,7 +59,7 @@ export default {
     const data = await this.$axios.get(this.$config.newsUrl,{
         headers: { 'X-API-KEY': this.$config.apiKey }
       })
-    this.item = data.data.contents
+    this.items = data.data.contents
     // console.log(data.data.contents)
   }, 
 }
