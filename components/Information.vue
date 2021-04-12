@@ -1,16 +1,11 @@
 <template>
   <div>
-    <!--<li v-for='item in items' :key='item.id'>-->
-    <!--    <nuxt-link :to="`/${item.id}`">-->
-    <!--      {{ item.title }}-->
-    <!--    </nuxt-link>-->
-    <!--</li>-->
-    <div v-for='item in items' :key='item.id' class="transform hover:bg-gray-200 transition duration-500 hover:scale-105">
+    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-200 transition duration-500 hover:scale-105">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card md:flex mt-8 ">
-        <!--:class="{-->
-        <!--    'anime-right': isIntersectingElement,-->
-        <!--  }">-->
+        <div class="project-card md:flex mt-8 opacity-0"
+        :class="{
+            'anime-right': isIntersectingElement[index],
+          }">
             <div class="img max-w-lg md:max-w-sm mx-auto">
                 <img :src="item.image.url" class="rounded-xl" alt="">
             </div>
@@ -22,6 +17,10 @@
           </div>
         </div>
       </nuxt-link>
+      <intersection-observer
+        sentinal-name="sentinal-name"
+        v-model='isIntersectingElement[index]'>
+      </intersection-observer>
     </div>
   </div>
   
@@ -29,13 +28,23 @@
 
 <script>
 // import axios from 'axios'
-
+import IntersectionObserver from "../components/IntersectionObserver"
 export default {
+  components:{
+    IntersectionObserver
+  },
   data () {
     return {
-      items: ""
+      items: "",
+      isIntersectingElement: []
     }
   },
+  // methods: {
+  //   addFind: function (id) {
+  //     this.finds.push({ id: false });
+  //     console.log(this.finds)
+  //   },
+  // },
   // mounted() {
   //   this.asyncData()
   // },
@@ -60,7 +69,6 @@ export default {
         headers: { 'X-API-KEY': this.$config.apiKey }
       })
     this.items = data.data.contents
-    // console.log(data.data.contents)
   }, 
 }
 </script>
