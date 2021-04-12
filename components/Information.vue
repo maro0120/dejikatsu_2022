@@ -46,8 +46,11 @@ export default {
       })
       .then(res =>{
         console.log(res)
-        console.log('this.$config.newsUrl:' + this.$config.newsUrl)
         this.items= res.data.contents
+      })
+      .catch(error=>{
+        //失敗した時の処理
+        console.log('this.$config.newsUrl:' + this.$config.newsUrl)
       })
     }
   }
