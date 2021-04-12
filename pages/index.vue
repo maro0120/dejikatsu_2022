@@ -4,10 +4,6 @@
   <div class="wrapper-small md:px-10">
     
     <div class="header mt-5">
-      
-      <!--<intersection-observer-->
-      <!--  sentinal-name="sentinal-name"-->
-      <!--  @on-intersection-element="onIntersectionElement"></intersection-observer>-->
       <Social />
       <full-calendar v-bind:event="items"/>
     </div>
@@ -68,15 +64,6 @@
         return {
           items: []
         };
-      },
-      methods: {
-        onIntersectionElement(value) {
-          // if( value ){
-          //   document.querySelector('nav').classList.add("bg-white")
-          // } else {
-          //   document.querySelector('nav').classList.remove("bg-white")
-          // }
-        },
       },
       async asyncData({ $config }) {
         const { data } = await axios.get(
