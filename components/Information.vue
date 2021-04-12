@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     asyncData () {
-      this.$axios.get(this.$config.newsUrl,{
+      this.$axios.get('https://bure.microcms.io/api/v1/news',{
         headers: { 'X-API-KEY': 'c680e687-9a1f-4a43-9e92-11ed89e20952' }
       })
       .then(res =>{
