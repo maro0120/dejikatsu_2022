@@ -52,7 +52,6 @@ export default {
         //失敗した時の処理
         console.log('this.$config.newsUrl:' + this.$config.newsUrl)
         console.log('this.$config.apiKey:' + this.$config.apiKey)
-        console.log('this.$config:' + this.$config)
       })
     }
   }

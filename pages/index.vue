@@ -66,6 +66,8 @@
         };
       },
       async asyncData({ $config }) {
+        console.log('$config.newsUrl:' + $config.newsUrl)
+        console.log('$config.apiKey:' + $config.apiKey)
         const { data } = await axios.get(
           $config.baseUrl,
           {
