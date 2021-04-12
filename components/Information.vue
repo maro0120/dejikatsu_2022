@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   data () {
@@ -42,7 +42,7 @@ export default {
   methods: {
     asyncData () {
       this.$axios.get(this.$config.newsUrl,{
-        headers: { 'X-API-KEY': this.$config.apiKey }
+        headers: { 'X-API-KEY': 'c680e687-9a1f-4a43-9e92-11ed89e20952' }
       })
       .then(res =>{
         console.log(res)

@@ -1,4 +1,4 @@
-// require('dotenv').config()
+require('dotenv').config()
 // const { MICROCMS_API_KEY } = process.env.MICROCMS_API_KEY
 // const { MICROCMS_API_URL } = process.env.MICROCMS_API_URL
 // const isDev = process.env.NODE_ENV === 'development'
