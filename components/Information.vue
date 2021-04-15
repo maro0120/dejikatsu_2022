@@ -1,15 +1,18 @@
 <template>
   <div>
-    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-200 transition duration-500 hover:scale-105">
+    <div class="text-center m-10 border-b-2 pb-3">
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">blog</h3>
+    </div>
+    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-100 transition duration-500 hover:scale-105 rounded-xl">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card md:flex mt-8 opacity-0"
+        <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 fiu"
         :class="{
-            'anime-right': isIntersectingElement[index],
+            'fadeInUp': isIntersectingElement[index],
           }">
-            <div class="img max-w-lg md:max-w-sm mx-auto">
-                <img :src="item.image.url" class="rounded-xl" alt="">
+            <div style="flex-basis:50%;">
+                <img :src="item.image.url" class="rounded-xl h-screen/3 block m-auto" alt="">
             </div>
-            <div class="flex flex-col justify-between max-w-lg mx-auto">
+            <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
                 <div class="txt md:px-5 lg:px-0">
                 <p class="text-base text-gray-700 my-3 group-hover:text-red">{{ new Date(item.publishedAt).toLocaleDateString() }}</p>
                 <h2 class="text-xl font-semibold text-gray-800">{{ item.title }}</h2>
@@ -72,3 +75,21 @@ export default {
   }, 
 }
 </script>
+
+<style>
+  /*----- フェードインしながら上へスライド -----*/
+  .fiu{
+  	opacity: 0;
+  	transform: translate(0, 60px);
+  	-webkit-transform: translate(0, 60px);
+  }
+  .fadeInUp{
+  	opacity: 1.0;
+  	transform: translate(0, 0);
+  	-webkit-transform: translate(0, 0);
+  	transition: .8s;
+  }
+  .max-height-30{
+    max-height: 40vh;
+  }
+</style>

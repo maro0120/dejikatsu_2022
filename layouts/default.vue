@@ -35,6 +35,9 @@
     opacity: 0;
     pointer-events: none;
   }
+  a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
 </style>
 <script>
 import Header from '@/components/Header'
