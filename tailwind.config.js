@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors:{
         'primary': '#4b57db',
-        'brown: '#D98859',
+        'brown': '#D98859',
       },
       height: theme => ({
         "screen/2": "50vh",
