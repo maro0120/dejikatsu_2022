@@ -5,6 +5,7 @@
     
     <div class="header mt-5">
       <Social />
+      <Introduction />
       <full-calendar v-bind:event="items"/>
     </div>
 
@@ -44,6 +45,7 @@
 
 <script>
   import Hero from '../components/Hero.vue'
+  import Introduction from '../components/Introduction.vue'
   import Social from '../components/Social.vue'
   import Projects from '../components/Projects.vue'
   import Information from '../components/Information.vue'
@@ -53,7 +55,7 @@
 
     export default {
       components:{
-        Hero, Social, Projects, TechStack, IntersectionObserver
+        Hero, Introduction, Social, Projects, TechStack, IntersectionObserver
       },
       // head() {
       //   return {

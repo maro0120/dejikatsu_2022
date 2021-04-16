@@ -97,4 +97,18 @@ export default {
 .fc-scrollgrid-section-header {
   background-color: #BF5B04;
 }
+.fc-button-primary {
+  background-color: #BF5B04 !important;
+  border: none !important;
+  padding:0.3rem 0.5rem !important;
+}
+.fc-button-primary:active {
+  box-shadow: none !important;
+}
+.fc-button-primary:focus {
+  box-shadow: none !important;
+}
+.fc-col-header-cell-cushion {
+  color: #EEE;
+}
 </style>

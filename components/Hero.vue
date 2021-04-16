@@ -1,14 +1,7 @@
 <template>
-  <div class="bg-cover h-screen w-full" :style="{'background-image': `url(${require('@/assets/pexels-pixabay-461060.jpg')})`}">
-    <!--<div class="text-center text-gray-700 mb-8">-->
-        <!--<h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800"><span class="font-normal text-gray-700"> Hello, I am </span>Gaurav</h3> -->
-        <!--<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">I am a Full Stack Software Developer</h2>-->
-    <!--    <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800">パンのいえブレではお母さんが家庭で作ってくれるような手づくりパンをご提供させて頂いています。</h3>-->
-    <!--    <p class="text-lg lg:text-xl font-semibold">酵母は『白神こだま酵母』を使用しています。『白神こだま酵母』は世界自然遺産・白神山地で発見された酵母で、 しっとりと柔らかく焼きあがるのが特徴です。</p>-->
-    <!--    <p class="text-lg lg:text-xl font-semibold">また、国産小麦や自家栽培の米（低農薬栽培のあきたこまち）を製粉した米粉を使用し、体に優しく美味しいパンやお菓子を作っています。</p>-->
-    <!--    <p class="text-lg lg:text-xl font-semibold">法事パンや法事焼き菓子、お中元・お歳暮用の焼き菓子詰め合わせなど各種ご予約も承っています。</p>-->
-    <!--    <p class="text-lg lg:text-xl font-semibold">ご予算・希望商品を伺いご用意させていただきますので、お気軽にご連絡ください。</p>-->
-    </div>
+  <div class="main_imgBox">
+    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/pexels-pixabay-461060.jpg')})`}"></div>
+    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/pexels-vaibhav-jadhav-3218467.jpg')})`}"></div>
   </div>
 </template>
 
@@ -19,5 +12,73 @@ export default {
 </script>
 
 <style>
+.main_imgBox {
+	top: 0;
+	left: 0;
+	justify-content: center;
+	height: 90vh;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.main_img {
+	z-index:10;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*枚数×6s*/
+	-webkit-animation: anime 12s 0s infinite;
+	animation: anime 12s 0s infinite; 
+}
+.main_img:nth-of-type(2) {
+  /*2枚目6秒後開始*/
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+}
 
+@keyframes anime {
+	0% {
+		opacity: 0;
+	}
+	/*3秒後→3s/12s=25%*/
+	25% {
+		opacity: 1;
+	}
+	/*6秒後→6s/12s=25%*/
+	50% {
+		opacity: 1;
+	}
+	/*9秒後→9s/12s=25%*/
+	75% {
+		opacity: 0;
+		transform: scale(1.2);
+		z-index:9;
+	}
+	100% { opacity: 0 }
+}
+
+@-webkit-keyframes anime {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+		transform: scale(1.2);
+		z-index:9;
+	}
+	100% { opacity: 0 }
+}
 </style>

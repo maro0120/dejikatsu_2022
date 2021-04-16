@@ -13,10 +13,10 @@
                 <img :src="item.image.url" class="rounded-xl h-screen/3 block m-auto" alt="">
             </div>
             <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
-                <div class="txt md:px-5 lg:px-0">
-                <p class="text-base text-gray-700 my-3 group-hover:text-red">{{ new Date(item.publishedAt).toLocaleDateString() }}</p>
-                <h2 class="text-xl font-semibold text-gray-800">{{ item.title }}</h2>
-                </div>
+              <div class="txt md:px-5 lg:px-0">
+              <p class="text-base text-gray-700 my-3 group-hover:text-red">{{ new Date(item.publishedAt).toLocaleDateString() }}</p>
+              <h2 class="text-xl font-semibold text-gray-800">{{ item.title }}</h2>
+              </div>
           </div>
         </div>
       </nuxt-link>
