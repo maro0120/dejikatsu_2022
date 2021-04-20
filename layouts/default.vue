@@ -7,7 +7,7 @@
         <Header v-show="isShow" />
       <!--</div>-->
     </transition>
-    <div class="mb-auto">
+    <div class="mb-auto bg-gradient-to-r from-gray-100 to-gray-200">
       <Nuxt />
     </div>
     <div class="h-10">

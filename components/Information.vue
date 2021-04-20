@@ -3,9 +3,9 @@
     <div class="text-center m-10 border-b-2 pb-3">
       <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">blog</h3>
     </div>
-    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-100 transition duration-500 hover:scale-105 rounded-xl">
+    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-100 transition duration-500 hover:scale-105">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 fiu"
+        <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 fiu shadow-lg bg-white rounded-xl"
         :class="{
             'fadeInUp': isIntersectingElement[index],
           }">

@@ -9,6 +9,7 @@ module.exports = {
       colors:{
         'primary': '#4b57db',
         'brown': '#D98859',
+        indigo: '#5c6ac4',
       },
       height: theme => ({
         "screen/2": "50vh",
