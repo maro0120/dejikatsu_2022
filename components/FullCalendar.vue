@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="flex flex-wrap">
+    <div class="w-full lg:w-1/2 p-5">
       <FullCalendar
         :options='calendarOptions'
        >
@@ -8,7 +9,18 @@
           <i>{{ arg.event.title }}</i>
         </template>
       </FullCalendar>
+    </div>
       <!--<p class="received">{{ variable }}</p>-->
+    <div class="w-full lg:w-1/2 p-5">
+      <FullCalendar
+        :options='calendarOptions2'
+       >
+        <template v-slot:eventContent='arg'>
+          <b>{{ arg.timeText }}</b>
+          <i>{{ arg.event.title }}</i>
+        </template>
+      </FullCalendar>
+    </div>
   </div>
 </template>
 <script>
@@ -46,12 +58,45 @@ export default {
       calendarOptions: {
         plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
         headerToolbar: {
-          left: 'prev,next',
+          // left: 'prev,next',
+          left: '',
           center: 'title',
           right: ''
         },
         initialView: 'dayGridMonth',
         initialEvents: this.event,
+        locale:jaLocale,
+        editable: false,
+        selectable: false,
+        selectMirror: true,
+        dayMaxEvents: false,
+        weekends: true,
+        select: this.handleDateSelect,
+        eventsSet: this.handleEvents,
+        eventClick: this.handleEventClick,
+        eventsSet: this.handleEvents,
+        /* you can update a remote database when these fire:
+        eventAdd:
+        eventChange:
+        eventRemove:
+        */
+        contentHeight: 'auto',
+        eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
+        displayEventTime: false,
+        eventDisplay: "block",
+        eventTextColor: "black",
+        eventBorderColor: "white"
+      },
+      calendarOptions2: {
+        plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+        headerToolbar: {
+          left: '',
+          center: 'title',
+          right: ''
+        },
+        initialView: 'dayGridMonth',
+        initialEvents: this.event,
+        initialDate: '',
         locale:jaLocale,
         editable: false,
         selectable: false,
@@ -87,7 +132,15 @@ export default {
       // change the border color just for fun
       // clickInfo.el.style.borderColor = 'red'
     },
-  }
+  },
+  created(){
+    let now = moment();
+    now = now.add(1, 'month');
+    now = now.format('YYYY-MM-DD')
+    this.calendarOptions2.initialDate = now
+    // alert(now);
+    
+  },
 }
 </script>
 <style>

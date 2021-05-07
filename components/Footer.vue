@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="my-5 md:my-0 order-last md:order-none text-center">
-                    <p class="text-lg font-semibold text-gray-600">Made with ❤ by <a href="https://twitter.com/devggaurav" class="text-primary hover:underline">devggaurav.</a></p>
+                    <p class="text-lg font-semibold text-gray-600">Made with</p>
                 </div>
                 
                 <div>
