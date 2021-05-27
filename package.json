@@ -28,7 +28,9 @@
     "nuxt-property-decorator": "^2.9.1",
     "sweetalert": "^2.1.2",
     "vue-debounce": "^2.6.0",
-    "vue-event-calendar": "^1.5.2"
+    "vue-event-calendar": "^1.5.2",
+    "vue-scrollto": "^2.20.0",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^2.1.0",

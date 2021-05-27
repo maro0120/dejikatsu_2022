@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors:{
         'primary': '#4b57db',
-        'brown': '#D98859',
+        'brown': '#fca45c',
         indigo: '#5c6ac4',
       },
       height: theme => ({

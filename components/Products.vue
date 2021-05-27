@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">products</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold" id="products">products</h3>
     </div>
     <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 bg-white">
       <div style="flex-basis:50%;">

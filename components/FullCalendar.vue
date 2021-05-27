@@ -148,7 +148,7 @@ export default {
   white-space: normal;
 }
 .fc-scrollgrid-section-header {
-  background-color: #BF5B04;
+  background-color: #fca45c;
 }
 .fc-button-primary {
   background-color: #BF5B04 !important;

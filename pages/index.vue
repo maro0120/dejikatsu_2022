@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <Hero />
     <div class="wrapper-small md:px-10 bg-white py-10">
       <div class="header mt-5">
@@ -12,9 +12,10 @@
           <h4 class="text-center">Featured Projects </h4>
           <i class='bx bx-chevrons-down ml-1 mt-1'></i>
         </div>
-          <Projects />
-          <Information />
-          <Products />
+        <Projects />
+        <Information />
+        <Products />
+        <Googlemap />
       </div>
     </div>
   </div>
@@ -27,12 +28,13 @@
   import Projects from '../components/Projects.vue'
   import Information from '../components/Information.vue'
   import Products from '../components/Products.vue'
+  import Googlemap from '../components/Googlemap.vue'
   import axios from 'axios'
   import IntersectionObserver from "../components/IntersectionObserver"
 
     export default {
       components:{
-        Hero, Introduction, Social, Projects, Products, IntersectionObserver
+        Hero, Introduction, Social, Projects, Products, IntersectionObserver, Googlemap
       },
       // head() {
       //   return {
