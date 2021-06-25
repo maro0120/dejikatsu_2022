@@ -2,11 +2,12 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold" id="blog">blog</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="blog">blog</h3>
     </div>
-    <div v-for='(item, index) in items' :key='item.id' class="transform hover:bg-gray-100 transition duration-500 hover:scale-105">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div v-for='(item, index) in items' :key='item.id' class="transform transition duration-500 hover:scale-105">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 fiu shadow-lg bg-white rounded-xl"
+        <div class="project-card flex flex-col justify-center items-center content-center text-center mt-8 fiu shadow-lg bg-white rounded-xl"
         :class="{
             'fadeInUp': isIntersectingElement[index],
           }">
@@ -25,6 +26,7 @@
         sentinal-name="sentinal-name"
         v-model='isIntersectingElement[index]'>
       </intersection-observer>
+    </div>
     </div>
   </div>
   
@@ -69,7 +71,7 @@ export default {
   //   }
   // },
   async fetch() {
-    const data = await this.$axios.get(this.$config.newsUrl,{
+    const data = await this.$axios.get(this.$config.newsUrl+'?limit=3',{
         headers: { 'X-API-KEY': this.$config.apiKey }
       })
     this.items = data.data.contents

@@ -1,7 +1,7 @@
 <template>
   <div class="main_imgBox">
-    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/pexels-pixabay-461060.jpg')})`}"></div>
-    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/pexels-vaibhav-jadhav-3218467.jpg')})`}"></div>
+    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-1.jpg')})`}"></div>
+    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-2.jpg')})`}"></div>
   </div>
 </template>
 

@@ -42,6 +42,15 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api',
     // '@nuxt/typescript-build',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          'Cabin+Sketch': true,
+          'Kosugi+Maru': true,
+        },
+      }
+    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

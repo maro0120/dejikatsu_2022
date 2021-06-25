@@ -23,7 +23,7 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-sm font-sans">
+        <ul class="flex space-x-8 font-title">
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#home'"to>Home</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>Blog</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>Products</nuxt-link></li>
@@ -65,7 +65,7 @@
           <Tailwind />
         </span>
 
-        <ul class="divide-y font-sans">
+        <ul class="divide-y font-title">
           <!--<li><a href="#">Home</a></li>-->
           <!--<li><a href="#blog" @click="isOpen = false" class="my-4 inline-block">Blog</a></li>-->
           <!--<li><a href="#products" @click="isOpen = false" class="my-4 inline-block">Products</a></li>-->

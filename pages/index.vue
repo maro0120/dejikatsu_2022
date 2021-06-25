@@ -3,19 +3,19 @@
     <Hero />
     <div class="wrapper-small md:px-10 bg-white py-10">
       <div class="header mt-5">
-        <Social />
         <Introduction />
         <full-calendar v-bind:event="items"/>
       </div>
       <div class="mt-16 mb-16">
-        <div class="flex justify-center items-center text-base font-semibold text-gray-600">
-          <h4 class="text-center">Featured Projects </h4>
-          <i class='bx bx-chevrons-down ml-1 mt-1'></i>
-        </div>
-        <Projects />
+        <!--<div class="flex justify-center items-center text-base font-semibold text-gray-600">-->
+        <!--  <h4 class="text-center">Featured Projects </h4>-->
+        <!--  <i class='bx bx-chevrons-down ml-1 mt-1'></i>-->
+        <!--</div>-->
+        <!--<Projects />-->
         <Information />
         <Products />
         <Googlemap />
+        <!--<Social />-->
       </div>
     </div>
   </div>

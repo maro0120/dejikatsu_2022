@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col h-screen justify-between">
+  <div class="flex flex-col h-screen justify-between font-body">
     <div id="loading">
       <div id="loader">
-  <div id="shadow"></div>
-  <div id="box"></div>
-</div>
+        <div id="shadow"></div>
+        <div id="box"></div>
+      </div>
     </div>
     <transition
       name="headerNav"

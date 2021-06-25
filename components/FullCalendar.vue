@@ -1,25 +1,30 @@
 <template>
-  <div class="flex flex-wrap">
-    <div class="w-full lg:w-1/2 p-5">
-      <FullCalendar
-        :options='calendarOptions'
-       >
-        <template v-slot:eventContent='arg'>
-          <b>{{ arg.timeText }}</b>
-          <i>{{ arg.event.title }}</i>
-        </template>
-      </FullCalendar>
+  <div>
+    <div class="text-center m-10 border-b-2 pb-3">
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-title text-2xl" id="event">EVENT SCHEDULE</h3>
     </div>
-      <!--<p class="received">{{ variable }}</p>-->
-    <div class="w-full lg:w-1/2 p-5">
-      <FullCalendar
-        :options='calendarOptions2'
-       >
-        <template v-slot:eventContent='arg'>
-          <b>{{ arg.timeText }}</b>
-          <i>{{ arg.event.title }}</i>
-        </template>
-      </FullCalendar>
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-1/2 p-5">
+        <FullCalendar
+          :options='calendarOptions'
+         >
+          <template v-slot:eventContent='arg'>
+            <b>{{ arg.timeText }}</b>
+            <i>{{ arg.event.title }}</i>
+          </template>
+        </FullCalendar>
+      </div>
+        <!--<p class="received">{{ variable }}</p>-->
+      <div class="w-full lg:w-1/2 p-5">
+        <FullCalendar
+          :options='calendarOptions2'
+         >
+          <template v-slot:eventContent='arg'>
+            <b>{{ arg.timeText }}</b>
+            <i>{{ arg.event.title }}</i>
+          </template>
+        </FullCalendar>
+      </div>
     </div>
   </div>
 </template>

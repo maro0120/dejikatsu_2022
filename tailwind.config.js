@@ -5,6 +5,10 @@ module.exports = {
   },
   purge: [],
   theme: {
+    fontFamily: {
+      'title': ['Cabin Sketch',],
+      'body': ['Kosugi Maru','sans-serif'],
+    },
     extend: {
       colors:{
         'primary': '#4b57db',
