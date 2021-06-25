@@ -2,6 +2,7 @@
   <div class="main_imgBox">
     <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-1.jpg')})`}"></div>
     <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-2.jpg')})`}"></div>
+    <div class="main_logo" :style="{'background-image': `url(${require('@/assets/logo_white.svg')})`}"></div>
   </div>
 </template>
 
@@ -37,6 +38,16 @@ export default {
 	-webkit-animation: anime 12s 0s infinite;
 	animation: anime 12s 0s infinite; 
 }
+.main_logo {
+	z-index:20;
+	width: 100vw;
+	height: 70vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 10%;
+}
+
 .main_img:nth-of-type(2) {
   /*2枚目6秒後開始*/
 	-webkit-animation-delay: 6s;
