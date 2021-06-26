@@ -5,7 +5,7 @@
 
       <!-- Header logo -->
       <div>
-        <Tailwind />
+        <nuxt-link v-scroll-to="'#home'"to><Tailwind /></nuxt-link>
       </div>
 
       <!-- Mobile toggle -->
@@ -24,11 +24,12 @@
       <!-- Navbar -->
       <div class="hidden md:block">
         <ul class="flex space-x-8 font-title">
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#home'"to>Home</nuxt-link></li>
+          <!--<li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#home'"to>Home</nuxt-link></li>-->
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#event'"to>Event Schedule</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>Blog</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>Products</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>Map</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><a href="#" class="">Contact</a></li>
+          <!--<li class="transform transition duration-300 hover:scale-125"><a href="#" class="">Contact</a></li>-->
         </ul>
       </div>
 
@@ -71,7 +72,7 @@
           <!--<li><a href="#products" @click="isOpen = false" class="my-4 inline-block">Products</a></li>-->
           <!--<li><a href="#map" @click="isOpen = false" class="my-4 inline-block">Map</a></li>-->
           <!--<li><a href="#" @click="isOpen = false" class="my-4 inline-block">Contact</a></li>-->
-          <li><nuxt-link v-scroll-to="'#home'"to @click.native="isOpen = false" class="my-4 block">Home</nuxt-link></li>
+          <li><nuxt-link v-scroll-to="'#event'"to @click.native="isOpen = false" class="my-4 block">Event Schedule</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#blog'"to @click.native="isOpen = false" class="my-4 block">Blog</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#products'"to @click.native="isOpen = false" class="my-4 block">Products</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">Map</nuxt-link></li>

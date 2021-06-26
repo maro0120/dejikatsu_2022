@@ -9,7 +9,7 @@ export default {
   ssr: 'true',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Monotone',
+    title: 'パンのいえ ブレ Meison de Pain blé',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
