@@ -12,9 +12,10 @@
         <!--  <i class='bx bx-chevrons-down ml-1 mt-1'></i>-->
         <!--</div>-->
         <!--<Projects />-->
-        <Information />
+        <News />
         <Products />
         <Googlemap />
+        <Information />
         <!--<Social />-->
       </div>
     </div>
@@ -24,6 +25,7 @@
 <script>
   import Hero from '../components/Hero.vue'
   import Introduction from '../components/Introduction.vue'
+  import News from '../components/News.vue'
   import Social from '../components/Social.vue'
   import Projects from '../components/Projects.vue'
   import Information from '../components/Information.vue'
@@ -34,7 +36,7 @@
 
     export default {
       components:{
-        Hero, Introduction, Social, Projects, Products, IntersectionObserver, Googlemap
+        Hero, Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap
       },
       // head() {
       //   return {

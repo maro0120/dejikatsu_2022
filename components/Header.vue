@@ -28,7 +28,8 @@
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#event'"to>Event Schedule</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>Blog</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>Products</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>Map</nuxt-link></li>
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>Access</nuxt-link></li>
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#info'"to>Information</nuxt-link></li>
           <!--<li class="transform transition duration-300 hover:scale-125"><a href="#" class="">Contact</a></li>-->
         </ul>
       </div>
@@ -75,7 +76,8 @@
           <li><nuxt-link v-scroll-to="'#event'"to @click.native="isOpen = false" class="my-4 block">Event Schedule</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#blog'"to @click.native="isOpen = false" class="my-4 block">Blog</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#products'"to @click.native="isOpen = false" class="my-4 block">Products</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">Map</nuxt-link></li>
+          <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">Access</nuxt-link></li>
+          <li><nuxt-link v-scroll-to="'#info'"to @click.native="isOpen = false" class="my-4 block">Information</nuxt-link></li>
         </ul>
 
         <!--<div class="follow">-->
