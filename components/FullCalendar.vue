@@ -131,7 +131,7 @@ export default {
     handleWeekendsToggle() {},
     handleDateSelect(selectInfo) {},
     handleEventClick(clickInfo) {
-      swal('時間: ' + moment(clickInfo.event.start).format("YYYY/MM/DD HH:mm") + '\n場所: ' + clickInfo.event.title)
+      swal('時間: ' + moment(clickInfo.event.start).format("YYYY/MM/DD HH:mm") + '\nタイトル: ' + clickInfo.event.title + '\n詳細:\n' + clickInfo.event.extendedProps.detail)
       // alert('Coordinates: ' + clickInfo.jsEvent.pageX + ',' + clickInfo.jsEvent.pageY)
       // alert('View: ' + clickInfo.view.type)
       // change the border color just for fun

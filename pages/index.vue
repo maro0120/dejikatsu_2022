@@ -79,6 +79,7 @@
             id : i,
             title : data.contents[i]['title'],
             start : data.contents[i]['eventDate'],
+            detail : data.contents[i]['detail'],
             backgroundColor : colors
           }
           events.push(ev)
