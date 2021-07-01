@@ -7,10 +7,10 @@
       <p class="text-md lg:text-xl">ご予算・希望商品を伺いご用意させていただきますので、お気軽にご連絡ください。</p>
     </div>
     <div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">
-      <div class="my-8 px-2 h-screen/3" style="flex-basis:50%;">
+      <div class="my-8 px-2" style="flex-basis:50%;">
           <img src="../assets/intro-1.jpg" class="block m-auto" alt="">
       </div>
-      <div class="my-8 px-2 h-screen/3" style="flex-basis:50%;">
+      <div class="my-8 px-2" style="flex-basis:50%;">
           <img src="../assets/intro-2.jpg" class="block m-auto" alt="">
       </div>
     </div>

@@ -1,7 +1,8 @@
 <template>
-  <div class="wrapper mx-auto px-10">
-    <hr class="h-px mt-6 border-gray-300 max-w-screen-xl mx-auto">
-      <div class="md:py-10">
+  <div class="">
+  <div class="wrapper-small mx-auto px-10 bg-brown">
+    <!--<hr class="h-px mt-6 border-gray-300 max-w-screen-xl mx-auto">-->
+      <div class="py-6">
         <div class="flex flex-col items-center justify-between mt-6 md:mt-0 md:flex-row">
             <!--<div class="logo">-->
             <!--  <nuxt-link to="/">-->
@@ -18,20 +19,21 @@
             </div>
             <div class="flex flex-col mb-4">
               <div>
-                <p>電話: 086-728-3671.</p>
+                <a href="tel:0867283671">電話: 086-728-3671</a>
               </div>
               <div>
                 <p>住所: 岡山県久米郡久米南町塩之内1355</p>
               </div>
             </div>
-            <div class="mb-4">
-              <p class="font-title">Copyright © Meison de Pain blé. All Rights Reserved.</p>
-            </div>
             <div>
               <Social />
             </div>
         </div>
+        <div class="mb-4">
+          <p class="font-title text-right">Copyright © Meison de Pain blé. All Rights Reserved.</p>
+        </div>
     </div>
+  </div>
   </div>
 </template>
 

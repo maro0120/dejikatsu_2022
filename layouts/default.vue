@@ -15,10 +15,9 @@
     </transition>
     <div class="bg-gradient-to-r from-gray-100 to-gray-200">
       <Nuxt />
-    </div>
-    <div class="h-10">
       <Footer />
     </div>
+
   </div>
 </template>
 
