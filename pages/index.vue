@@ -13,6 +13,7 @@
         <!--</div>-->
         <!--<Projects />-->
         <News />
+        <Instagram />
         <Products />
         <Googlemap />
         <Information />
@@ -31,6 +32,7 @@
   import Information from '../components/Information.vue'
   import Products from '../components/Products.vue'
   import Googlemap from '../components/Googlemap.vue'
+  import Instagram from '../components/Instagram.vue'
   import axios from 'axios'
   import IntersectionObserver from "../components/IntersectionObserver"
 

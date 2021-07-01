@@ -2,6 +2,14 @@
   <div class="main_imgBox">
     <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-1.jpg')})`}"></div>
     <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-2.jpg')})`}"></div>
+    <!--<picture class="object-cover h-screen w-full main_img">-->
+    <!--  <source srcset="../assets/hero-2.jpg" media="(min-width: 768px)">-->
+    <!--  <img src="../assets/hero-1.jpg" alt="">-->
+    <!--</picture>-->
+    <!--<picture class="object-cover h-screen w-full main_img">-->
+    <!--  <source srcset="../assets/hero-2.jpg" media="(min-width: 768px)">-->
+    <!--  <img src="../assets/hero-1.jpg" alt="">-->
+    <!--</picture>-->
     <div class="main_logo" :style="{'background-image': `url(${require('@/assets/logo_white.svg')})`}"></div>
   </div>
 </template>

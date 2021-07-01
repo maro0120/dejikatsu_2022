@@ -6,12 +6,12 @@
       <p class="text-md lg:text-xl mb-4">法事パンや法事焼き菓子、お中元・お歳暮用の焼き菓子詰め合わせなど<br>各種ご予約も承っています。</p>
       <p class="text-md lg:text-xl">ご予算・希望商品を伺いご用意させていただきますので、お気軽にご連絡ください。</p>
     </div>
-    <div class="flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 bg-white">
-      <div class="my-8" style="flex-basis:50%;">
-          <img src="../assets/intro-1.jpg" class="h-screen/3 block m-auto" alt="">
+    <div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">
+      <div class="my-8 px-2 h-screen/3" style="flex-basis:50%;">
+          <img src="../assets/intro-1.jpg" class="block m-auto" alt="">
       </div>
-      <div class="my-8" style="flex-basis:50%;">
-          <img src="../assets/intro-2.jpg" class="h-screen/3 block m-auto" alt="">
+      <div class="my-8 px-2 h-screen/3" style="flex-basis:50%;">
+          <img src="../assets/intro-2.jpg" class="block m-auto" alt="">
       </div>
     </div>
   </div>

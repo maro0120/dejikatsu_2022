@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 require('dotenv').config()
 // const { MICROCMS_API_KEY } = process.env.MICROCMS_API_KEY
 // const { MICROCMS_API_URL } = process.env.MICROCMS_API_URL
@@ -19,7 +21,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'boxicons/css/boxicons.min.css'
@@ -82,4 +83,32 @@ export default {
   },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'apikey': MICROCMS_API_KEY },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'baseUrl': MICROCMS_API_URL },
+  generate: {
+    async routes() {
+      const limit = 1
+      const range = (start, end) =>
+        [...Array(end - start + 1)].map((_, i) => start + i)
+
+      // 一覧のページング
+      const pages = await axios
+        .get(process.env.MICROCMS_NEWS_URL+`?limit=0`, {
+          headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY },
+        })
+        .then((res) =>
+          range(1, Math.ceil(res.data.totalCount / limit)).map((p) => ({
+            route: `/page/${p}`,
+          }))
+        )
+      return pages
+    },
+  },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '/page/:p',
+        component: resolve(__dirname, 'pages/index.vue'),
+        name: 'page',
+      })
+    },
+  },
 }

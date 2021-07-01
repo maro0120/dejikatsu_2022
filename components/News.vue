@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div v-for='(item, index) in items' :key='item.id' class="transform transition duration-500 hover:scale-105">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card flex flex-col justify-center items-center content-center text-center mt-8 fiu shadow-lg bg-white rounded-xl"
+        <div class="project-card flex flex-col justify-center items-center content-center text-center mb-8 shadow-lg bg-white rounded-xl"
         :class="{
             'fadeInUp': isIntersectingElement[index],
           }">
@@ -22,10 +22,10 @@
           </div>
         </div>
       </nuxt-link>
-      <intersection-observer
-        sentinal-name="sentinal-name"
-        v-model='isIntersectingElement[index]'>
-      </intersection-observer>
+      <!--<intersection-observer-->
+      <!--  sentinal-name="sentinal-name"-->
+      <!--  v-model='isIntersectingElement[index]'>-->
+      <!--</intersection-observer>-->
     </div>
     </div>
   </div>
