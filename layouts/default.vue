@@ -151,7 +151,7 @@ export default {
     window.addEventListener('load', () => {
       this.onScroll()
     })
-    window.onload = function() {
+    window.onpageshow = function() {
       const spinner = document.getElementById('loading');
       spinner.classList.add('loaded');
     }
