@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col h-screen justify-between font-body">
-    <div id="loading">
-      <div id="loader">
-        <div id="shadow"></div>
-        <div id="box"></div>
-      </div>
-    </div>
+    <!--<div id="loading">-->
+    <!--  <div id="loader">-->
+    <!--    <div id="shadow"></div>-->
+    <!--    <div id="box"></div>-->
+    <!--  </div>-->
+    <!--</div>-->
     <transition
       name="headerNav"
     >
@@ -151,10 +151,10 @@ export default {
     window.addEventListener('load', () => {
       this.onScroll()
     })
-    window.onpageshow = function() {
-      const spinner = document.getElementById('loading');
-      spinner.classList.add('loaded');
-    }
+    // window.onpageshow = function() {
+    //   const spinner = document.getElementById('loading');
+    //   spinner.classList.add('loaded');
+    // }
   },
   watch: {
     // 上にスクロールした時に表示
