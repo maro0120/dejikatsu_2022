@@ -1,8 +1,8 @@
 <template>
   <div class="">
-  <div class="wrapper-small mx-auto px-10 bg-brown">
+  <div class="wrapper-small mx-auto py-2 bg-brown">
     <!--<hr class="h-px mt-6 border-gray-300 max-w-screen-xl mx-auto">-->
-      <div class="py-6">
+      <div class="pt-2">
         <div class="flex flex-col items-center justify-between mt-6 md:mt-0 md:flex-row">
             <!--<div class="logo">-->
             <!--  <nuxt-link to="/">-->
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="mb-4">
-          <p class="font-title text-right">Copyright © Meison de Pain blé. All Rights Reserved.</p>
+          <p class="font-title text-center text-xs">Copyright © Meison de Pain blé. All Rights Reserved.</p>
         </div>
     </div>
   </div>

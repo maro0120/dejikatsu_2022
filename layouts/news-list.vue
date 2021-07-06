@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col h-screen justify-between font-body">
-    <div id="loading">
-      <div id="loader">
-        <div id="shadow"></div>
-        <div id="box"></div>
-      </div>
-    </div>
+    <!--<div id="loading">-->
+    <!--  <div id="loader">-->
+    <!--    <div id="shadow"></div>-->
+    <!--    <div id="box"></div>-->
+    <!--  </div>-->
+    <!--</div>-->
 
     <div class="bg-gradient-to-r from-gray-100 to-gray-200">
       <Nuxt />
