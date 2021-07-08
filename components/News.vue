@@ -2,22 +2,19 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="blog">blog</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="blog">News</h3>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div v-for='(item, index) in items' :key='item.id' class="transform transition duration-500 hover:scale-105">
       <nuxt-link :to="`/${item.id}`">
-        <div class="project-card flex flex-col justify-center items-center content-center text-center mb-8 shadow-lg bg-white rounded-xl"
-        :class="{
-            'fadeInUp': isIntersectingElement[index],
-          }">
+        <div class="project-card flex flex-col justify-center items-center content-center text-center mb-8 bg-white">
             <div style="flex-basis:50%;">
-                <img :src="item.image.url" class="rounded-xl h-screen/3 block m-auto" alt="">
+                <img :src="item.image.url" class="h-screen/3 block m-auto" alt="">
             </div>
             <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
               <div class="txt md:px-5 lg:px-0">
               <p class="text-base text-gray-700 my-3 group-hover:text-red">{{ new Date(item.publishedAt).toLocaleDateString() }}</p>
-              <h2 class="text-xl font-semibold text-gray-800">{{ item.title }}</h2>
+              <h2 class="text-gray-800">{{ item.title }}</h2>
               </div>
           </div>
         </div>

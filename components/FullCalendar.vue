@@ -14,7 +14,6 @@
           </template>
         </FullCalendar>
       </div>
-        <!--<p class="received">{{ variable }}</p>-->
       <div class="w-full lg:w-1/2 p-5">
         <FullCalendar
           :options='calendarOptions2'
@@ -37,20 +36,6 @@ import jaLocale from "@fullcalendar/core/locales/ja"
 import swal from 'sweetalert';
 import moment from "moment";
 
-// const INITIAL_EVENTS = [
-//   {
-//     id: 1,
-//     title: 'All-day event',
-//     start: "2021-03-10T10:00:00",
-//   },
-//   {
-//     id: 2,
-//     title: '3day event',
-//     start: "2021-03-15T10:00:00",
-//     end: "2021-03-17T17:00:00"
-//   }
-// ]
-
 export default {
   components: {
     FullCalendar
@@ -63,7 +48,6 @@ export default {
       calendarOptions: {
         plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
         headerToolbar: {
-          // left: 'prev,next',
           left: '',
           center: 'title',
           right: ''
@@ -80,11 +64,6 @@ export default {
         eventsSet: this.handleEvents,
         eventClick: this.handleEventClick,
         eventsSet: this.handleEvents,
-        /* you can update a remote database when these fire:
-        eventAdd:
-        eventChange:
-        eventRemove:
-        */
         contentHeight: 'auto',
         eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
         displayEventTime: false,
@@ -112,11 +91,6 @@ export default {
         eventsSet: this.handleEvents,
         eventClick: this.handleEventClick,
         eventsSet: this.handleEvents,
-        /* you can update a remote database when these fire:
-        eventAdd:
-        eventChange:
-        eventRemove:
-        */
         contentHeight: 'auto',
         eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
         displayEventTime: false,
@@ -132,10 +106,6 @@ export default {
     handleDateSelect(selectInfo) {},
     handleEventClick(clickInfo) {
       swal('時間: ' + moment(clickInfo.event.start).format("YYYY/MM/DD HH:mm") + '\nタイトル: ' + clickInfo.event.title + '\n詳細:\n' + clickInfo.event.extendedProps.detail)
-      // alert('Coordinates: ' + clickInfo.jsEvent.pageX + ',' + clickInfo.jsEvent.pageY)
-      // alert('View: ' + clickInfo.view.type)
-      // change the border color just for fun
-      // clickInfo.el.style.borderColor = 'red'
     },
   },
   created(){
@@ -143,8 +113,7 @@ export default {
     now = now.add(1, 'month');
     now = now.format('YYYY-MM-DD')
     this.calendarOptions2.initialDate = now
-    // alert(now);
-    
+
   },
 }
 </script>

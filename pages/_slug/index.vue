@@ -20,7 +20,7 @@
       <div class="block">
         <ul class="flex space-x-8 font-title">
           <!--<li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#home'"to>Home</nuxt-link></li>-->
-          <li class="transform transition duration-300 hover:scale-125"><button type="button" onclick="history.back()">back</button></li>
+          <li class="transform transition duration-300 hover:scale-125"><button type="button" class="outline-none focus:outline-none"onclick="history.back()">back</button></li>
           </ul>
       </div>
     </div>
