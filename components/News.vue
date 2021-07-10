@@ -9,7 +9,7 @@
       <nuxt-link :to="`/${item.id}`">
         <div class="project-card flex flex-col justify-center items-center content-center text-center mb-8 bg-white">
             <div style="flex-basis:50%;">
-                <img :src="item.image.url" class="h-screen/3 block m-auto" alt="">
+                <img :src="item.image.url" class="h-screen/3 block m-auto object-contain" alt="">
             </div>
             <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
               <div class="txt md:px-5 lg:px-0">

@@ -4,12 +4,12 @@
     <div class="wrapper-small md:px-10 bg-white py-10">
       <div class="header mt-5">
         <Introduction />
+        <News />
         <full-calendar v-bind:event="items"/>
       </div>
       <div class="mt-16 mb-16">
-        <News />
-        <Instagram />
         <Products />
+        <Instagram />
         <Googlemap />
         <Information />
       </div>
