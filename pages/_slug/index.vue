@@ -53,7 +53,7 @@ export default {
   },
   async asyncData({ $config,params }) {
     const { data } = await axios.get(
-      `https://bure.microcms.io/api/v1/news/${params.slug}`,
+      `https://ble.microcms.io/api/v1/news/${params.slug}`,
       {
         headers: { 'X-API-KEY': $config.apiKey }
       }
