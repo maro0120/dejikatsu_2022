@@ -24,8 +24,8 @@
       <!-- Navbar -->
       <div class="hidden md:block">
         <ul class="flex space-x-8 font-title">
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>News</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#event'"to>Event Schedule</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>Blog</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>Products</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>Access</nuxt-link></li>
           <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#info'"to>Information</nuxt-link></li>

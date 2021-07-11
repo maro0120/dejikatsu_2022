@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-title text-2xl" id="event">EVENT SCHEDULE</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="event">EVENT SCHEDULE</h3>
     </div>
     <div class="flex flex-wrap">
       <div class="w-full lg:w-1/2 p-5">
