@@ -66,8 +66,8 @@
         </span>
 
         <ul class="divide-y font-title">
+          <li><nuxt-link v-scroll-to="'#blog'"to @click.native="isOpen = false" class="my-4 block">News</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#event'"to @click.native="isOpen = false" class="my-4 block">Event Schedule</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#blog'"to @click.native="isOpen = false" class="my-4 block">Blog</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#products'"to @click.native="isOpen = false" class="my-4 block">Products</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">Access</nuxt-link></li>
           <li><nuxt-link v-scroll-to="'#info'"to @click.native="isOpen = false" class="my-4 block">Information</nuxt-link></li>
