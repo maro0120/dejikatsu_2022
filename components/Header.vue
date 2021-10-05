@@ -5,7 +5,7 @@
 
       <!-- Header logo -->
       <div>
-        <nuxt-link v-scroll-to="'#home'"to><Tailwind /></nuxt-link>
+        <!--<nuxt-link v-scroll-to="'#home'"to><Tailwind /></nuxt-link>-->
       </div>
 
       <!-- Mobile toggle -->

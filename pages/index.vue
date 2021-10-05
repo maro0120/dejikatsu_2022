@@ -1,15 +1,15 @@
 <template>
   <div id="home">
-    <Hero />
-    <div class="wrapper-small md:px-10 bg-white py-10">
+    <!--<Hero />-->
+    <div class="wrapper md:px-10 bg-white py-10">
       <div class="header mt-5">
         <Introduction />
-        <News />
-        <full-calendar v-bind:event="items"/>
+        <!--<News />-->
+        <!--<full-calendar v-bind:event="items"/>-->
       </div>
       <div class="mt-16 mb-16">
         <Products />
-        <Instagram />
+        <!--<Instagram />-->
         <Googlemap />
         <Information />
       </div>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import Hero from '../components/Hero.vue'
+  // import Hero from '../components/Hero.vue'
   import Introduction from '../components/Introduction.vue'
   import News from '../components/News.vue'
   import Social from '../components/Social.vue'
@@ -32,7 +32,7 @@
 
     export default {
       components:{
-        Hero, Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap
+        Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap
       },
       // head() {
       //   return {

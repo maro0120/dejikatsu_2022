@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors:{
         'primary': '#4b57db',
-        'brown': '#fca45c',
+        'brown': '#62b0ff',
         indigo: '#5c6ac4',
       },
       height: theme => ({

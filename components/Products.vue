@@ -1,44 +1,48 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="products">products</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="products">開催形式</h3>
     </div>
     <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 bg-white">
-      <div style="flex-basis:50%;">
-          <img src="../assets/products-1.jpg" class="h-screen/3 block m-auto" alt="">
+      <div>
+          <img src="../assets/Brainstorming.png" class="block m-auto" alt="">
       </div>
-      <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
+      <div class="flex max-w-lg justify-center" >
         <div class="txt md:px-5 lg:px-0">
-          <h2 class="text-xl font-semibold text-gray-800">米粉パン</h2>
-          <p class="text-base text-gray-700 my-3">低農薬で自家栽培したあきたこまちを使った米粉を使用。<br>米粉パン特有のもっちり食感をお楽しみ頂けます。</p>
+          <h2 class="text-xl font-semibold text-gray-800">講習会</h2>
+          <p class="text-left text-base text-gray-700 my-3">受講者に対し、実施会場において支援員が講師となっていずれかの講座に関する講習を行う形態の講習会です。<br>
+            週替わりで各会場にて開催するので最寄りの会場にお申込みください。（要予約）
+          </p>
         </div>
       </div>
     </div>
     <div class="project-card flex flex-col md:flex-row-reverse justify-center items-center content-center text-center mt-8 bg-white">
       <div style="flex-basis:50%;">
-          <img src="../assets/products-2.jpg" class="h-screen/3 block m-auto" alt="">
+          <img src="../assets/Team presentation.png" class="block m-auto" alt="">
       </div>
       <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
         <div class="txt md:px-5 lg:px-0">
-          <h2 class="text-xl font-semibold text-gray-800">米粉100%の焼き菓子</h2>
-          <p class="text-base text-gray-700 my-3">米粉パンと同様に、自家栽培の米粉を使用。<br>小麦を一切使わず100%米粉を使用した焼き菓子です。</p>
+          <h2 class="text-xl font-semibold text-gray-800">相談会</h2>
+          <p class="text-left text-base text-gray-700 my-3">日時・場所を事前に周知した上で、参加者に実施会場を開放し、講座を特定せずに参加者の求めに応じてデジタル活用全般の助言・相談を行うよろず相談会です。<br>
+            各会場の講習会実施後に開催いたしますので、お気軽にお越しください。（予約不要）
+          </p>
         </div>
       </div>
     </div>
-    <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 bg-white">
-      <div style="flex-basis:50%;">
-          <img src="../assets/products-3.jpg" class="h-screen/3 block m-auto" alt="">
-      </div>
-      <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
-        <div class="txt md:px-5 lg:px-0">
-          <h2 class="text-xl font-semibold text-gray-800">国産小麦のパン</h2>
-          <p class="text-base text-gray-700 my-3">はるゆたかなどの北海道産小麦と津山産小麦ほほえみを使用。<br>保存料は未使用。添加物も最低限に抑えてあります。</p>
-        </div>
-      </div>
-    </div>
+    <!--<div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 bg-white">-->
+    <!--  <div style="flex-basis:50%;">-->
+    <!--      <img src="../assets/products-3.jpg" class="h-screen/3 block m-auto" alt="">-->
+    <!--  </div>-->
+    <!--  <div class="flex max-w-lg justify-center" style="flex-basis:50%;">-->
+    <!--    <div class="txt md:px-5 lg:px-0">-->
+    <!--      <h2 class="text-xl font-semibold text-gray-800">国産小麦のパン</h2>-->
+    <!--      <p class="text-base text-gray-700 my-3">はるゆたかなどの北海道産小麦と津山産小麦ほほえみを使用。<br>保存料は未使用。添加物も最低限に抑えてあります。</p>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
     <div class="mt-4 md:mt-10">
       <section>
-        <a href="https://form.run/@blegen-adm--1625995825" target="_blank" class="btn_02">商品のご注文はこちら</a>
+        <a href="https://reserva.be/rantan" target="_blank" class="btn_02">講習会のご予約はこちらから</a>
       </section>
     </div>
   </div>

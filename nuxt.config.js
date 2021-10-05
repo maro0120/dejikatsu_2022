@@ -11,11 +11,11 @@ export default {
   ssr: 'true',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'パンのいえ ブレ Meison de Pain blé',
+    title: 'デジタル活用支援推進事業',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'パンのいえ　ブレ　岡山県久米南町のパン屋' }
+      { hid: 'description', name: 'description', content: 'デジタル活用支援推進事業' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -40,7 +40,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/composition-api',
+    '@nuxtjs/composition-api/module',
     // '@nuxt/typescript-build',
     [
       '@nuxtjs/google-fonts',

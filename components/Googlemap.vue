@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="text-center m-10 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="map">Access</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="map">会場案内</h3>
     </div>
-    <div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">
-      <div class="my-8 px-2" style="flex-basis:50%;">
-          <img src="../assets/exterior-1.jpg" class="block m-auto" alt="">
-      </div>
-      <div class="my-8 px-2" style="flex-basis:50%;">
-          <img src="../assets/exterior-2.jpg" class="block m-auto" alt="">
-      </div>
-    </div>
+    <!--<div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">-->
+    <!--  <div class="my-8 px-2" style="flex-basis:50%;">-->
+    <!--      <img src="../assets/exterior-1.jpg" class="block m-auto" alt="">-->
+    <!--  </div>-->
+    <!--  <div class="my-8 px-2" style="flex-basis:50%;">-->
+    <!--      <img src="../assets/exterior-2.jpg" class="block m-auto" alt="">-->
+    <!--  </div>-->
+    <!--</div>-->
     <div class="gmap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6541.784906603395!2d133.9712992358667!3d34.93423409130636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35543cf174bf9c2b%3A0x305a9e74df2c104f!2z44OR44Oz44Gu44GE44GIIOODluODrA!5e0!3m2!1sja!2sjp!4v1626142664424!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.606826121404!2d133.96238395056787!3d34.94139637770089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35543cea286d9783%3A0xf4706f9538bcc8aa!2z54m55a6a6Z2e5Za25Yip5rS75YuV5rOV5Lq6IOOCieOCk-OBn-OCkw!5e0!3m2!1sja!2sjp!4v1626677276337!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@
 .gmap {
   height: 0;
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 40.25%;
   position: relative;
 }
 .gmap iframe {

@@ -13,7 +13,7 @@
         <Header v-show="isShow" />
       <!--</div>-->
     </transition>
-    <div class="bg-gradient-to-r from-gray-100 to-gray-200">
+    <div class="bg-gradient-to-r from-gray-100 to-gray-100">
       <Nuxt />
       <Footer />
     </div>
@@ -23,7 +23,7 @@
 
 <style>
   .wrapper{
-    @apply max-w-screen-xl mx-auto;
+    @apply max-w-screen-xl mx-auto px-2;
   }
 
   .wrapper-small{
@@ -42,6 +42,9 @@
   }
   a{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  html {
+    font-size: 18px;
   }
   /* ローディング画面 */
 #loading {
@@ -124,6 +127,9 @@
   50% {
     transform: scale(1.2,1);
   }
+}
+@media screen and (min-width: 768px){
+.br-sp {display: none; }
 }
 </style>
 <script>

@@ -1,9 +1,9 @@
 <template>
-  <div class="main_imgBox">
-    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-1.jpg')})`}"></div>
-    <div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-2.jpg')})`}"></div>
-    <div class="main_logo" :style="{'background-image': `url(${require('@/assets/logo_white.svg')})`}"></div>
-  </div>
+  <!--<div class="main_imgBox">-->
+    <!--<div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-1.jpg')})`}"></div>-->
+    <!--<div class="bg-cover h-screen w-full main_img" :style="{'background-image': `url(${require('@/assets/hero-2.jpg')})`}"></div>-->
+    <!--<div class="main_logo" :style="{'background-image': `url(${require('@/assets/logo_white.svg')})`}"></div>-->
+  <!--</div>-->
 </template>
 
 <script>
