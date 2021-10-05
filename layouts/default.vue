@@ -6,13 +6,9 @@
     <!--    <div id="box"></div>-->
     <!--  </div>-->
     <!--</div>-->
-    <transition
-      name="headerNav"
-    >
-      <!--<div class="mb-auto"  >-->
-        <Header v-show="isShow" />
-      <!--</div>-->
-    </transition>
+    <!--<transition name="headerNav" >-->
+    <!--    <Header v-show="isShow" />-->
+    <!--</transition>-->
     <div class="bg-gradient-to-r from-gray-100 to-gray-100">
       <Nuxt />
       <Footer />
