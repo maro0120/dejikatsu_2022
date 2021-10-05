@@ -73,6 +73,11 @@ export default {
     extend(config, ctx) {},
     // vendor: ['vue2-google-maps'],
     // transpile: [/^vue2-google-maps($|\/)/]
+    postcss: {
+  		plugins: {
+  			'postcss-custom-properties': false
+  		}
+	}
   },
   privateRuntimeConfig: {
     apiKey: process.env.MICROCMS_API_KEY,
