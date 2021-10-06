@@ -12,6 +12,7 @@
         <!--<Instagram />-->
         <Googlemap />
         <Information />
+        <Table />
       </div>
     </div>
   </div>
@@ -27,12 +28,13 @@
   import Products from '../components/Products.vue'
   import Googlemap from '../components/Googlemap.vue'
   import Instagram from '../components/Instagram.vue'
+  import Table from '../components/Table.vue'
   import axios from 'axios'
   import IntersectionObserver from "../components/IntersectionObserver"
 
     export default {
       components:{
-        Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap
+        Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap, Table
       },
       // head() {
       //   return {
