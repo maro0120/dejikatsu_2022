@@ -94,7 +94,7 @@ export default {
 }
 .vgt-select{
   font-size: inherit;
-  width: inherit;
+  width: inherit!important;
 }
 table.vgt-table td{
   padding: .5em;
