@@ -52,6 +52,7 @@ export default {
           label: '日程',
           field: 'date',
           type: 'date',
+          thClass: 'text-left',
           dateInputFormat: 'yyyy-MM-dd',
           dateOutputFormat: 'MM/dd',
         },
@@ -86,9 +87,25 @@ export default {
 .container {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  /*padding: 20px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.vgt-select{
+  font-size: inherit;
+  width: inherit;
+}
+table.vgt-table td{
+  padding: .5em;
+}
+.vgt-table th{
+  padding: .5em;
+}
+.vgt-table thead th{
+  padding: .5em;
+}
+.text-left {
+  text-align: left;
 }
 </style>
