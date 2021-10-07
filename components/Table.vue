@@ -39,12 +39,12 @@ export default {
             enabled: true,
             placeholder: 'すべて',
             filterDropdownItems: [
-              "基本操作",
-              "カメ等アプリ",
-              "地図アプリ",
-              "インターネット",
-              "LINEの使い方",
-              "マイナンバーカード",
+              { value: 'スマートフォンの基本的な使い方', text: '基本操作' },  
+              { value: 'カメラ等基本的なアプリの使い方', text: 'カメラ等アプリ' },  
+              { value: '地図アプリの使い方', text: '地図アプリ' },
+              { value: 'インターネットの使い方', text: 'インターネット' },  
+              { value: 'LINEの使い方', text: 'LINEの使い方' },  
+              { value: 'マイナンバーカード', text: 'マイナンバーカード' }
             ]
           }
         },
