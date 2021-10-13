@@ -97,7 +97,7 @@ export default {
   width: inherit!important;
 }
 table.vgt-table td{
-  padding: .5em;
+  padding: .8em .4em!important;
 }
 .vgt-table th{
   padding: .5em;
