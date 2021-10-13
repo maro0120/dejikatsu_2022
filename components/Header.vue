@@ -23,12 +23,10 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 font-title">
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#blog'"to>News</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#event'"to>Event Schedule</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>Products</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>Access</nuxt-link></li>
-          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#info'"to>Information</nuxt-link></li>
+        <ul class="flex space-x-8">
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#products'"to>デジタル活用支援推進事業</nuxt-link></li>
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#map'"to>会場案内</nuxt-link></li>
+          <li class="transform transition duration-300 hover:scale-125"><nuxt-link v-scroll-to="'#info'"to>開催情報</nuxt-link></li>
         </ul>
       </div>
 
@@ -61,16 +59,14 @@
           </button>
         </div>
 
-        <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
-          <Tailwind />
-        </span>
+        <!--<span @click="isOpen = false" class="flex w-full items-center p-4 border-b">-->
+        <!--  <Tailwind />-->
+        <!--</span>-->
 
-        <ul class="divide-y font-title">
-          <li><nuxt-link v-scroll-to="'#blog'"to @click.native="isOpen = false" class="my-4 block">News</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#event'"to @click.native="isOpen = false" class="my-4 block">Event Schedule</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#products'"to @click.native="isOpen = false" class="my-4 block">Products</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">Access</nuxt-link></li>
-          <li><nuxt-link v-scroll-to="'#info'"to @click.native="isOpen = false" class="my-4 block">Information</nuxt-link></li>
+        <ul class="divide-y">
+          <li><nuxt-link v-scroll-to="'#products'"to @click.native="isOpen = false" class="my-4 block">デジタル活用支援推進事業</nuxt-link></li>
+          <li><nuxt-link v-scroll-to="'#map'"to @click.native="isOpen = false" class="my-4 block">会場案内</nuxt-link></li>
+          <li><nuxt-link v-scroll-to="'#info'"to @click.native="isOpen = false" class="my-4 block">開催情報</nuxt-link></li>
         </ul>
 
       </aside>

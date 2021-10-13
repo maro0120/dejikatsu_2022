@@ -15,7 +15,7 @@
     </div>
     <div>
       <div class="text-center my-10 border-b-2 pb-3">
-        <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold font-title" id="info">デジタル活用支援推進事業とは</h3>
+        <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold" id="products">デジタル活用支援推進事業とは</h3>
       </div>
       <div class="text-center text-gray-700 mb-8">
         <p class="text-base md:text-xl mb-4">高齢者をはじめとした様々な方が<br class="br-sp">身近な場所で身近な人から<br>
