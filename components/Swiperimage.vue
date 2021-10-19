@@ -1,15 +1,14 @@
 <template>
-
-  <swiper class="swiper" :options="swiperOption">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
-  </swiper>
+  <div class="my-5">
+    <swiper class="swiper" :options="swiperOption">
+      <swiper-slide><img src="../assets/image1-2.png" class="block m-auto" alt=""></swiper-slide>
+      <swiper-slide><img src="../assets/image1-3.png" class="block m-auto" alt=""></swiper-slide>
+      <swiper-slide><img src="../assets/image1-4.png" class="block m-auto" alt=""></swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div>
+    </swiper>
+  </div>
 </template>
 
 <script>
@@ -23,7 +22,8 @@ export default {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
-        }
+        },
+        loop: true,
       }
     }
   }
@@ -44,5 +44,10 @@ export default {
   font-weight: bold;
   font-size: $font-size-huge * 2;
   background-color: $white;
+}
+.swiper-slide > img {
+   object-fit: contain; /* IE: not support */
+   width: 100%;
+   height: 100%;
 }
 </style>
