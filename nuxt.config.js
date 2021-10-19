@@ -11,11 +11,11 @@ export default {
   ssr: 'true',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'デジタル活用支援推進事業',
+    title: '久米南町スマホ教室　デジタル活用支援推進事業',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'デジタル活用支援推進事業' }
+      { hid: 'description', name: 'description', content: '岡山県　久米南町　スマホ教室　デジタル活用支援推進事業' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -31,6 +31,7 @@ export default {
     { src: '~/plugins/full-calendar', mode: 'client' },
     { src: '~/plugins/vue-scrollto', mode: 'client' },
     { src: '~/plugins/vue-good-table', mode: 'client' },
+    { src: '~plugins/vue-awesome-swiper.js', mode: 'client' },
     // { src: '~/plugins/microcms' }
   ],
 
