@@ -51,6 +51,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
+    '@aceforth/nuxt-optimized-images',
     // '@nuxt/typescript-build',
     [
       '@nuxtjs/google-fonts',
@@ -63,6 +64,9 @@ export default {
       }
     ],
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
