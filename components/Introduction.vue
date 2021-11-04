@@ -10,7 +10,10 @@
     </div>
     <div class="flex flex-row justify-center items-center content-center text-center mt-8">
       <div class="px-2">
-          <img src="../assets/Conference.png" class="block m-auto" alt="">
+          <picture class="block m-auto">
+            <source :srcset="require('~/assets/Conference.png?webp')" type="image/webp" />
+            <img :src="require('~/assets/Conference.png')" />
+          </picture>
       </div>
     </div>
     <div class="wow animate__fadeInUp">

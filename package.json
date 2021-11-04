@@ -26,12 +26,14 @@
     "axios": "^0.21.1",
     "boxicons": "^2.0.7",
     "core-js": "^3.9.1",
+    "cwebp-bin": "^7.0.0",
     "moment": "^2.29.1",
     "nuxt": "^2.15.8",
     "nuxt-property-decorator": "^2.9.1",
     "postcss": "^8.3.8",
     "sweetalert": "^2.1.2",
     "swiper": "^5.4.5",
+    "uuid": "^7.0.3",
     "vue-awesome-swiper": "^4.1.1",
     "vue-debounce": "^2.6.0",
     "vue-event-calendar": "^1.5.2",
@@ -40,7 +42,11 @@
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/tailwindcss": "^4.2.1"
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "webp-loader": "^0.6.0"
   }
 }
