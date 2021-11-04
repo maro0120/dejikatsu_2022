@@ -13,7 +13,7 @@
           <img src="../assets/Conference.png" class="block m-auto" alt="">
       </div>
     </div>
-    <div>
+    <div class="wow animate__fadeInUp">
       <div class="text-center my-10 border-b-2 pb-3">
         <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold" id="products">デジタル活用支援推進事業とは</h3>
       </div>

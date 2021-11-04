@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-xs md:text-xl">        
+  <div class="container text-xs md:text-xl wow animate__fadeInUp">        
     <vue-good-table
       :columns="columns"
       :rows="rows"

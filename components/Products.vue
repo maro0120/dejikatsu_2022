@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="project-card flex flex-col md:flex-row-reverse justify-center items-center content-center text-center mt-8">
+    <div class="project-card flex flex-col md:flex-row-reverse justify-center items-center content-center text-center mt-8 wow animate__fadeInUp">
       <div style="flex-basis:50%;">
           <img src="../assets/Team presentation.png" class="block m-auto" alt="">
       </div>
