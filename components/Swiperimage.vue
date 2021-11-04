@@ -1,9 +1,24 @@
 <template>
   <div class="my-5">
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide><img src="../assets/image1-2.png" class="block m-auto" alt=""></swiper-slide>
-      <swiper-slide><img src="../assets/image1-3.png" class="block m-auto" alt=""></swiper-slide>
-      <swiper-slide><img src="../assets/image1-4.png" class="block m-auto" alt=""></swiper-slide>
+      <swiper-slide>
+        <picture class="block m-auto">
+          <source :srcset="require('~/assets/image1-2.png?webp')" type="image/webp" />
+          <img :src="require('~/assets/image1-2.png')" />
+        </picture>
+      </swiper-slide>
+      <swiper-slide>
+        <picture class="block m-auto">
+          <source :srcset="require('~/assets/image1-3.png?webp')" type="image/webp" />
+          <img :src="require('~/assets/image1-3.png')" />
+        </picture>
+      </swiper-slide>
+      <swiper-slide>
+        <picture class="block m-auto">
+          <source :srcset="require('~/assets/image1-4.png?webp')" type="image/webp" />
+          <img :src="require('~/assets/image1-4.png')" />
+        </picture>
+      </swiper-slide>
       <!--<div class="swiper-pagination" slot="pagination"></div>-->
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>

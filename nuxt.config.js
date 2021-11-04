@@ -65,7 +65,8 @@ export default {
     ],
   ],
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    optimizeImagesInDev: true,
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)

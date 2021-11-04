@@ -5,7 +5,10 @@
     </div>
     <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 wow animate__fadeInUp">
       <div>
-          <img src="../assets/Brainstorming.png" class="block m-auto" alt="">
+        <picture class="block m-auto">
+          <source :srcset="require('~/assets/Brainstorming.png?webp')" type="image/webp" />
+          <img :src="require('~/assets/Brainstorming.png')" />
+        </picture>
       </div>
       <div class="flex max-w-lg justify-center" >
         <div class="txt md:px-5 lg:px-0">
@@ -17,8 +20,11 @@
       </div>
     </div>
     <div class="project-card flex flex-col md:flex-row-reverse justify-center items-center content-center text-center mt-8 wow animate__fadeInUp">
-      <div style="flex-basis:50%;">
-          <img src="../assets/Team presentation.png" class="block m-auto" alt="">
+      <div>
+        <picture class="block m-auto">
+          <source :srcset="require('~/assets/Team presentation.png?webp')" type="image/webp" />
+          <img :src="require('~/assets/Team presentation.png')" />
+        </picture>
       </div>
       <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
         <div class="txt md:px-5 lg:px-0">
