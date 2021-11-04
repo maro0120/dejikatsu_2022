@@ -8,7 +8,7 @@
         <span class="font-bold">参加費無料</span>、お気軽にご参加ください。
       </p>
     </div>
-    <div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">
+    <div class="flex flex-row justify-center items-center content-center text-center mt-8">
       <div class="px-2">
           <img src="../assets/Conference.png" class="block m-auto" alt="">
       </div>

@@ -1,13 +1,13 @@
 <template>
   <div id="home">
     <!--<Hero />-->
-    <div class="wrapper md:px-10 bg-white py-10">
+    <div class="wrapper md:px-10 pt-10">
       <div class="header mt-5">
         <Introduction />
         <!--<News />-->
         <!--<full-calendar v-bind:event="items"/>-->
       </div>
-      <div class="mt-16 mb-16">
+      <div class="mt-16">
         <Products />
         <!--<Instagram />-->
         <Googlemap />
@@ -20,6 +20,9 @@
 </template>
 
 <script>
+if (process.browser) { // Here we introduce... According to the environment wow.js
+  var {WOW} = require('wowjs')
+}
   // import Hero from '../components/Hero.vue'
   import Introduction from '../components/Introduction.vue'
   import News from '../components/News.vue'
@@ -87,7 +90,14 @@
         return {
           items: events
         };
-      }
+      },
+      mounted() {
+        this.$nextTick(() => {
+          if (process.browser) { // On the page mounted In the life cycle Instantiate according to the environment WOW
+            new WOW({animateClass: 'animate__animated',live: false, }).init()
+          }
+        });
+      },
     };
 </script>
 

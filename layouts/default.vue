@@ -1,15 +1,16 @@
 <template>
-  <div class="flex flex-col h-screen justify-between font-body">
+  <div class="flex flex-col justify-between font-body fadein-anime bg-email">
     <!--<div id="loading">-->
     <!--  <div id="loader">-->
     <!--    <div id="shadow"></div>-->
     <!--    <div id="box"></div>-->
     <!--  </div>-->
     <!--</div>-->
-    <transition name="headerNav" >
-        <Header v-show="isShow" />
-    </transition>
-    <div class="bg-gradient-to-r from-gray-100 to-gray-100">
+    <Header />
+    <!--<transition name="headerNav" >-->
+    <!--    <Header v-show="isShow" />-->
+    <!--</transition>-->
+    <div class="">
       <Nuxt />
       <Footer />
     </div>
@@ -127,6 +128,14 @@
 @media screen and (min-width: 768px){
 .br-sp {display: none; }
 }
+.fadein-anime {
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+.bg-email {
+  background-image: url("~/assets/email-pattern.png");
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+}
 </style>
 <script>
 import Header from '@/components/Header'
@@ -136,40 +145,40 @@ export default {
     Header,
     Footer
   },
-  data () {
-    return {
-      scrollY: 0,
-      isShow: true
-    }
-  },
-  mounted () {
-    // スクロールイベントを取得
-    window.addEventListener('scroll', this.onScroll)
-    // window.addEventListener('scroll', () => {
-				// if( 30 < window.scrollY ) {
-				//   this.onScroll()
-				// }
-    // })
-    window.addEventListener('load', () => {
-      this.onScroll()
-    })
-    // window.onpageshow = function() {
-    //   const spinner = document.getElementById('loading');
-    //   spinner.classList.add('loaded');
-    // }
-  },
-  watch: {
-    // 上にスクロールした時に表示
-    scrollY (newValue, oldValue) {
-      this.$set(this, 'isShow', newValue < oldValue)
-    }
-  },
-  methods: {
-    // スクロール値の取得
-    onScroll () {
-      // alert(window.scrollY)
-      this.$set(this, 'scrollY', window.pageYOffset)
-    }
-  }
+  // data () {
+  //   return {
+  //     scrollY: 0,
+  //     isShow: true
+  //   }
+  // },
+  // mounted () {
+  //   // スクロールイベントを取得
+  //   window.addEventListener('scroll', this.onScroll)
+  //   // window.addEventListener('scroll', () => {
+		// 		// if( 30 < window.scrollY ) {
+		// 		//   this.onScroll()
+		// 		// }
+  //   // })
+  //   window.addEventListener('load', () => {
+  //     this.onScroll()
+  //   })
+  //   // window.onpageshow = function() {
+  //   //   const spinner = document.getElementById('loading');
+  //   //   spinner.classList.add('loaded');
+  //   // }
+  // },
+  // watch: {
+  //   // 上にスクロールした時に表示
+  //   scrollY (newValue, oldValue) {
+  //     this.$set(this, 'isShow', newValue < oldValue)
+  //   }
+  // },
+  // methods: {
+  //   // スクロール値の取得
+  //   onScroll () {
+  //     // alert(window.scrollY)
+  //     this.$set(this, 'scrollY', window.pageYOffset)
+  //   }
+  // }
 }
 </script>

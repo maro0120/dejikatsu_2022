@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center min-h-screen bg-black">
     <div class="container mx-auto">
-      <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="max-w-md mx-auto my-10 p-5 rounded-md shadow-sm">
         <div class="text-center">
           <h1
             class="my-3 text-3xl font-semibold text-gray-700"

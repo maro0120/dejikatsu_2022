@@ -19,11 +19,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        // src: '~/assets/js/wow.min.js'
+      }
+    ],
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    'boxicons/css/boxicons.min.css'
+    'boxicons/css/boxicons.min.css',
+    // "~assets/css/animate.css",
+    'animate.css/animate.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -31,7 +38,8 @@ export default {
     { src: '~/plugins/full-calendar', mode: 'client' },
     { src: '~/plugins/vue-scrollto', mode: 'client' },
     { src: '~/plugins/vue-good-table', mode: 'client' },
-    { src: '~plugins/vue-awesome-swiper.js', mode: 'client' },
+    { src: '~/plugins/vue-awesome-swiper', mode: 'client' },
+    // { src: '~/plugins/animate', mode: 'client' },
     // { src: '~/plugins/microcms' }
   ],
 
@@ -50,6 +58,7 @@ export default {
         families: {
           'Cabin+Sketch': true,
           'Kosugi+Maru': true,
+          'Noto+Sans+JP': true,
         },
       }
     ],

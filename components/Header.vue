@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="fixed w-full p-3 bg-transparent z-50 bg-brown">
+  <nav class="fixed w-full p-3 bg-transparent z-50 bg-transparent">
     <div class="flex items-center justify-between">
 
       <!-- Header logo -->
@@ -45,7 +45,7 @@
       </transition>
 
       <!-- Drawer Menu -->
-      <aside class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30" :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
+      <aside class="p-5 transform top-0 left-0 w-64 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30" :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
         
         <div class="close">
           <button class="absolute top-0 right-0 mt-4 mr-4 outline-none" @click=" isOpen = false">
@@ -74,6 +74,12 @@
     </div>
   </nav>
 </template>
+
+<style>
+  .bg-transparent{
+    background-color: hsla(0,0%,96.5%,.6)
+  }
+</style>
 
 <script>
 export default {

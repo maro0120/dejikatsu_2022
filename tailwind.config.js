@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'title': ['Cabin Sketch',],
-      'body': ['Kosugi Maru','sans-serif'],
+      'body': ['Noto Sans JP', 'Kosugi Maru','sans-serif'],
     },
     extend: {
       colors:{

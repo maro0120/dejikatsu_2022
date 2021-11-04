@@ -3,7 +3,7 @@
     <div class="text-center m-10 border-b-2 pb-3">
       <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold" id="map">会場案内</h3>
     </div>
-    <!--<div class="flex flex-row justify-center items-center content-center text-center mt-8 bg-white">-->
+    <!--<div class="flex flex-row justify-center items-center content-center text-center mt-8">-->
     <!--  <div class="my-8 px-2" style="flex-basis:50%;">-->
     <!--      <img src="../assets/exterior-1.jpg" class="block m-auto" alt="">-->
     <!--  </div>-->
