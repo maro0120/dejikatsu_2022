@@ -9,6 +9,7 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   ssr: 'true',
+  components: true,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: '久米南町スマホ教室　デジタル活用支援推進事業',
@@ -51,7 +52,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
-    '@nuxt/components',
+    // '@nuxt/components',
     // '@aceforth/nuxt-optimized-images',
     // '@nuxt/typescript-build',
     [
