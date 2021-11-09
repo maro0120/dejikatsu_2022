@@ -27,7 +27,9 @@
     "boxicons": "^2.0.7",
     "core-js": "^3.9.1",
     "cwebp-bin": "^7.0.0",
+    "hooper": "^0.3.4",
     "ipx": "^0.9.1",
+    "keen-slider": "^5.5.1",
     "moment": "^2.29.1",
     "nuxt": "^2.15.8",
     "nuxt-property-decorator": "^2.9.1",
@@ -39,7 +41,9 @@
     "vue-debounce": "^2.6.0",
     "vue-event-calendar": "^1.5.2",
     "vue-good-table": "^2.21.11",
+    "vue-keen-slider": "^1.4.1",
     "vue-scrollto": "^2.20.0",
+    "vueperslides": "^3.3.2",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {

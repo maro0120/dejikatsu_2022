@@ -35,10 +35,10 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~/plugins/full-calendar', mode: 'client' },
+    // { src: '~/plugins/full-calendar', mode: 'client' },
     { src: '~/plugins/vue-scrollto', mode: 'client' },
     { src: '~/plugins/vue-good-table', mode: 'client' },
-    { src: '~/plugins/vue-awesome-swiper', mode: 'client' },
+    { src: '~/plugins/KeenSlide', mode: 'client' },
     // { src: '~/plugins/animate', mode: 'client' },
     // { src: '~/plugins/microcms' }
   ],
@@ -51,7 +51,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
-    '@aceforth/nuxt-optimized-images',
+    // '@aceforth/nuxt-optimized-images',
     // '@nuxt/typescript-build',
     [
       '@nuxtjs/google-fonts',
