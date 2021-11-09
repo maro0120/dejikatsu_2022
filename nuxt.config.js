@@ -63,6 +63,19 @@ export default {
         },
       }
     ],
+    ['@nuxt/image', {
+        // dir: 'assets',
+        provider: 'static',
+        // staticFilename: '[publicPath]/[name]-[hash][ext]',
+        screens: {
+            xs: 400,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+            '2xl': 1536,
+        },
+    }],
   ],
   optimizedImages: {
     optimizeImages: true,
@@ -105,6 +118,9 @@ export default {
     baseUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_URL : undefined,
     newsUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_NEWS_URL : undefined
   },
+  // serverMiddleware: {
+  //   '/_ipx': '~/server/middleware/ipx.js'
+  // },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'apikey': MICROCMS_API_KEY },
   // [isDev ? 'publicRuntimeConfig':'privateRuntimeConfig'] : {'baseUrl': MICROCMS_API_URL },
   // generate: {

@@ -10,11 +10,17 @@
     </div>
     <div class="flex flex-row justify-center items-center content-center text-center mt-8">
       <div class="px-2">
-          <picture class="block m-auto">
-            <source :srcset="require('~/assets/Conference.png?webp')" type="image/webp" />
-            <img :src="require('~/assets/Conference.png')" />
-          </picture>
+          <!--<picture class="block m-auto">-->
+          <!--  <source :srcset="require('~/assets/Conference.png?webp')" type="image/webp" />-->
+          <!--  <img :src="require('~/assets/Conference.png')" />-->
+          <!--</picture>-->
       </div>
+      <nuxt-img
+        src="/img/Conference.png"
+        quality="70"
+        sizes="md:100% lg:500px"
+        class="block m-auto"
+      />
     </div>
     <div class="wow animate__fadeInUp">
       <div class="text-center my-10 border-b-2 pb-3">

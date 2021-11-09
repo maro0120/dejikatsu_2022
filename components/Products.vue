@@ -4,12 +4,18 @@
       <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">開催形式</h3>
     </div>
     <div class="project-card flex flex-col md:flex-row justify-center items-center content-center text-center mt-8 wow animate__fadeInUp">
-      <div>
-        <picture class="block m-auto">
-          <source :srcset="require('~/assets/Brainstorming.png?webp')" type="image/webp" />
-          <img :src="require('~/assets/Brainstorming.png')" />
-        </picture>
-      </div>
+      <!--<div>-->
+      <!--  <picture class="block m-auto">-->
+      <!--    <source :srcset="require('~/assets/Brainstorming.png?webp')" type="image/webp" />-->
+      <!--    <img :src="require('~/assets/Brainstorming.png')" />-->
+      <!--  </picture>-->
+      <!--</div>-->
+      <nuxt-img
+        src="/img/Brainstorming.png"
+        quality="70"
+        sizes="md:100% lg:500px"
+        class="block m-auto"
+      />
       <div class="flex max-w-lg justify-center" >
         <div class="txt md:px-5 lg:px-0">
           <h2 class="text-xl text-gray-800">講習会</h2>
@@ -20,12 +26,17 @@
       </div>
     </div>
     <div class="project-card flex flex-col md:flex-row-reverse justify-center items-center content-center text-center mt-8 wow animate__fadeInUp">
-      <div>
-        <picture class="block m-auto">
-          <source :srcset="require('~/assets/Team presentation.png?webp')" type="image/webp" />
-          <img :src="require('~/assets/Team presentation.png')" />
-        </picture>
-      </div>
+        <!--<picture class="block m-auto">-->
+        <!--  <source :srcset="require('~/assets/Team presentation.png?webp')" type="image/webp" />-->
+        <!--  <img :src="require('~/assets/Team presentation.png')" />-->
+        <!--</picture>-->
+          <nuxt-img
+            src="/img/Teampresentation.png"
+            quality="70"
+            sizes="md:100% lg:500px"
+            class="block m-auto"
+          />
+
       <div class="flex max-w-lg justify-center" style="flex-basis:50%;">
         <div class="txt md:px-5 lg:px-0">
           <h2 class="text-xl text-gray-800">相談会</h2>

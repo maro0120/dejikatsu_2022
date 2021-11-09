@@ -1,9 +1,33 @@
 <template>
   <div class="my-5">
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide><img src="../assets/image1-2.png" class="block m-auto" alt=""></swiper-slide>
-      <swiper-slide><img src="../assets/image1-3.png" class="block m-auto" alt=""></swiper-slide>
-      <swiper-slide><img src="../assets/image1-4.png" class="block m-auto" alt=""></swiper-slide>
+      <swiper-slide>
+        <nuxt-img
+        src="/img/image1-2.png"
+        quality="70"
+        sizes="md:100% lg:500px"
+        class="block m-auto"
+      />
+      <!--<img src="../assets/image1-2.png" class="block m-auto" alt="">-->
+      </swiper-slide>
+      <swiper-slide>
+        <nuxt-img
+        src="/img/image1-3.png"
+        quality="70"
+        sizes="md:100% lg:500px"
+        class="block m-auto"
+      />
+      </swiper-slide>
+      <swiper-slide>
+        <nuxt-img
+        src="/img/image1-4.png"
+        quality="70"
+        sizes="md:100% lg:500px"
+        class="block m-auto"
+      />
+      </swiper-slide>
+      <!--<swiper-slide><img src="../assets/image1-3.png" class="block m-auto" alt=""></swiper-slide>-->
+      <!--<swiper-slide><img src="../assets/image1-4.png" class="block m-auto" alt=""></swiper-slide>-->
       <!--<div class="swiper-pagination" slot="pagination"></div>-->
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
