@@ -51,14 +51,13 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
+    '@nuxt/components',
     // '@aceforth/nuxt-optimized-images',
     // '@nuxt/typescript-build',
     [
       '@nuxtjs/google-fonts',
       {
         families: {
-          'Cabin+Sketch': true,
-          'Kosugi+Maru': true,
           'Noto+Sans+JP': true,
         },
       }
