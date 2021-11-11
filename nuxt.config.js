@@ -1,16 +1,11 @@
 import axios from 'axios'
 
 require('dotenv').config()
-// const { MICROCMS_API_KEY } = process.env.MICROCMS_API_KEY
-// const { MICROCMS_API_URL } = process.env.MICROCMS_API_URL
-// const isDev = process.env.NODE_ENV === 'development'
 
 export default {
-  // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   ssr: 'true',
   components: true,
-  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: '久米南町スマホ教室　デジタル活用支援推進事業',
     meta: [
@@ -22,26 +17,20 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {
-        // src: '~/assets/js/wow.min.js'
-      }
+      { src: 'https://cdn-blocks.karte.io/96b170d86a57be0fb436a73397985db7/builder.js' },
     ],
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'boxicons/css/boxicons.min.css',
-    // "~assets/css/animate.css",
     'animate.css/animate.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    // { src: '~/plugins/full-calendar', mode: 'client' },
     { src: '~/plugins/vue-scrollto', mode: 'client' },
     { src: '~/plugins/vue-good-table', mode: 'client' },
     { src: '~/plugins/KeenSlide', mode: 'client' },
-    // { src: '~/plugins/animate', mode: 'client' },
-    // { src: '~/plugins/microcms' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -52,9 +41,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
-    // '@nuxt/components',
-    // '@aceforth/nuxt-optimized-images',
-    // '@nuxt/typescript-build',
     [
       '@nuxtjs/google-fonts',
       {
@@ -64,9 +50,7 @@ export default {
       }
     ],
     ['@nuxt/image', {
-        // dir: 'assets',
         provider: 'static',
-        // staticFilename: '[publicPath]/[name]-[hash][ext]',
         screens: {
             xs: 400,
             sm: 640,
