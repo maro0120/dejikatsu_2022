@@ -13,7 +13,11 @@
           <p class="text-base md:text-xl text-gray-700 my-3">13:00 ～ 15:00</p>
       </div>
     </div>
-
+    <div class="flex flex-row justify-center items-center content-center text-center mt-8">
+      <div>
+          <p class="text-base md:text-xl text-gray-700 my-3">2021年度の事業は全て終了いたしました。<br>ご参加くださりありがとうございました。</p>
+      </div>
+    </div>
   </div>
 </template>
 

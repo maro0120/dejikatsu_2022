@@ -12,7 +12,7 @@
         <!--<Instagram />-->
         <LazyGooglemap />
         <Information />
-        <LazyTable />
+        <!--<LazyTable />-->
         <LazySwiperimage />
       </div>
     </div>
