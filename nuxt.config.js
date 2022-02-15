@@ -74,7 +74,8 @@ export default {
     ['@nuxtjs/google-gtag',{
       id: 'G-6Z87LYB498',
       debug: false
-    }]
+    }],
+    '@nuxtjs/sitemap'
     // '@nuxt/http',
   ],
   axios: {
