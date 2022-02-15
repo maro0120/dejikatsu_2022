@@ -79,7 +79,8 @@ export default {
     // '@nuxt/http',
   ],
   sitemap: {
-   hostname: 'https://dejikatsu-kumenan.netlify.app/'
+    path: '/sitemap.xml',
+    hostname: 'https://dejikatsu-kumenan.netlify.app/'
   },
   axios: {
     // proxyHeaders: false
