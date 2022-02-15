@@ -12,7 +12,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '岡山県　久米南町　スマホ教室　デジタル活用支援推進事業' },
-      { hid: 'google-site-verification', name: 'description', content: 'C-UdKHEuBYYJOoHWVRkZ7pFrKQ9PtN_gfds2hGYW1mM' },
+      { name: 'google-site-verification', content: 'C-UdKHEuBYYJOoHWVRkZ7pFrKQ9PtN_gfds2hGYW1mM' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
