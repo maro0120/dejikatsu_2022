@@ -75,12 +75,16 @@ export default {
       id: 'G-6Z87LYB498',
       debug: false
     }],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/gtm',
     // '@nuxt/http',
   ],
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://dejikatsu-kumenan.netlify.app/'
+  },
+  gtm: {
+    id: 'GTM-5CZLDQB' // タグマネージャーのid
   },
   axios: {
     // proxyHeaders: false
