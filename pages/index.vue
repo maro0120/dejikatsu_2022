@@ -12,7 +12,8 @@
         <!--<Instagram />-->
         <LazyGooglemap />
         <Information />
-        <!--<LazyTable />-->
+        <LazyTable />
+        <Reserve />
         <LazySwiperimage />
       </div>
     </div>

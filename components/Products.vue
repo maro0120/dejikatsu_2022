@@ -11,9 +11,9 @@
       <!--  </picture>-->
       <!--</div>-->
       <nuxt-img
-        src="/img/Brainstorming.png"
+        src="/img/13491_color.png"
         quality="70"
-        sizes="md:100% lg:500px"
+        sizes="md:100% lg:100px"
         class="block m-auto"
       />
       <div class="flex max-w-lg justify-center" >
@@ -31,7 +31,7 @@
         <!--  <img :src="require('~/assets/Team presentation.png')" />-->
         <!--</picture>-->
           <nuxt-img
-            src="/img/Teampresentation.png"
+            src="/img/11764_color.png"
             quality="70"
             sizes="md:100% lg:500px"
             class="block m-auto"

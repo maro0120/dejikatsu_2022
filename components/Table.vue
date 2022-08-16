@@ -35,18 +35,18 @@ export default {
         {
           label: '内容',
           field: 'naiyou',
-          filterOptions: {
-            enabled: true,
-            placeholder: 'すべて',
-            filterDropdownItems: [
-              { value: 'スマートフォンの基本的な使い方', text: '基本操作' },  
-              { value: 'カメラ等基本的なアプリの使い方', text: 'カメラ等アプリ' },  
-              { value: '地図アプリの使い方', text: '地図アプリ' },
-              { value: 'インターネットの使い方', text: 'インターネット' },  
-              { value: 'LINEの使い方', text: 'LINEの使い方' },  
-              { value: 'マイナンバーカード', text: 'マイナンバーカード' }
-            ]
-          }
+          // filterOptions: {
+          //   enabled: true,
+          //   placeholder: 'すべて',
+          //   filterDropdownItems: [
+          //     { value: 'スマートフォンの基本的な使い方', text: '基本操作' },  
+          //     { value: 'カメラ等基本的なアプリの使い方', text: 'カメラ等アプリ' },  
+          //     { value: '地図アプリの使い方', text: '地図アプリ' },
+          //     { value: 'インターネットの使い方', text: 'インターネット' },  
+          //     { value: 'LINEの使い方', text: 'LINEの使い方' },  
+          //     { value: 'マイナンバーカード', text: 'マイナンバーカード' }
+          //   ]
+          // }
         },
         {
           label: '日程',
@@ -58,25 +58,18 @@ export default {
         },
       ],
       rows: [
-        { id:1, kaijou:"文化センター", naiyou: "スマートフォンの基本的な使い方", date: '2021-09-17'},
-        { id:2, kaijou:"神目公民館", naiyou: "スマートフォンの基本的な使い方", date: '2021-09-24'},
-        { id:3, kaijou:"誕生寺公民館", naiyou: "スマートフォンの基本的な使い方", date: '2021-10-01'},
-        { id:4, kaijou:"文化センター", naiyou: "カメラ等基本的なアプリの使い方", date: '2021-10-08'},
-        { id:5, kaijou:"神目公民館", naiyou: "カメラ等基本的なアプリの使い方", date: '2021-10-15'},
-        { id:6, kaijou:"誕生寺公民館", naiyou: "カメラ等基本的なアプリの使い方", date: '2021-10-22'},
-        { id:7, kaijou:"文化センター", naiyou: "地図アプリの使い方", date: '2021-10-29'},
-        { id:8, kaijou:"神目公民館", naiyou: "地図アプリの使い方", date: '2021-11-05'},
-        { id:9, kaijou:"誕生寺公民館", naiyou: "地図アプリの使い方", date: '2021-11-12'},
-        { id:10, kaijou:"文化センター", naiyou: "インターネットの使い方", date: '2021-11-19'},
-        { id:11, kaijou:"神目公民館", naiyou: "インターネットの使い方", date: '2021-11-26'},
-        { id:12, kaijou:"誕生寺公民館", naiyou: "インターネットの使い方", date: '2021-12-03'},
-        { id:13, kaijou:"文化センター", naiyou: "LINEの使い方", date: '2021-12-10'},
-        { id:14, kaijou:"神目公民館", naiyou: "LINEの使い方", date: '2021-12-17'},
-        { id:15, kaijou:"誕生寺公民館", naiyou: "LINEの使い方", date: '2022-01-21'},
-        { id:16, kaijou:"文化センター", naiyou: "マイナンバーカード", date: '2022-01-28'},
-        { id:17, kaijou:"神目公民館", naiyou: "マイナンバーカード", date: '2022-02-04'},
-        { id:18, kaijou:"誕生寺公民館", naiyou: "マイナンバーカード", date: '2022-02-11'},
-
+        { id:1, kaijou:"文化センター", naiyou: "電源の入れ方、電話のかけ方、カメラの使い方、アプリのインストール", date: '2022-09-9'},
+        { id:2, kaijou:"文化センター", naiyou: "インターネット、メールの使い方", date: '2022-09-16'},
+        { id:3, kaijou:"文化センター", naiyou: "地図アプリ、SNSの使い方", date: '2022-09-23'},
+        { id:4, kaijou:"文化センター", naiyou: "マイナンバーカードの申請、新型コロナワクチン接種証明書の発行方法", date: '2022-09-30'},
+        { id:5, kaijou:"神目公民館", naiyou: "電源の入れ方、電話のかけ方、カメラの使い方、アプリのインストール", date: '2022-10-7'},
+        { id:6, kaijou:"神目公民館", naiyou: "インターネット、メールの使い方", date: '2022-10-14'},
+        { id:7, kaijou:"神目公民館", naiyou: "地図アプリ、SNSの使い方", date: '2022-10-21'},
+        { id:8, kaijou:"神目公民館", naiyou: "マイナンバーカードの申請、新型コロナワクチン接種証明書の発行方法", date: '2022-10-28'},
+        { id:9, kaijou:"誕生寺公民館", naiyou: "電源の入れ方、電話のかけ方、カメラの使い方、アプリのインストール", date: '2022-11-4'},
+        { id:10, kaijou:"誕生寺公民館", naiyou: "インターネット、メールの使い方", date: '2022-11-11'},
+        { id:11, kaijou:"誕生寺公民館", naiyou: "地図アプリ、SNSの使い方", date: '2022-11-25'},
+        { id:12, kaijou:"誕生寺公民館", naiyou: "マイナンバーカードの申請、新型コロナワクチン接種証明書の発行方法", date: '2022-12-2'},
       ],
     }
   }

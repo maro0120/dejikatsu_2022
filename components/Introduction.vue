@@ -2,15 +2,15 @@
   <div>
     <div class="text-center text-gray-700 mb-8">
       <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-10">久米南町　スマホ教室</h2>
-      <p class="text-base md:text-xl mb-4 font-bold">"スマホ"を活用して暮らしを便利に！</p>
-      <p class="text-base md:text-xl mb-4">スマホで楽しく会話したり、<br class="br-sp">写真を撮ったり、<br class="br-sp">気になったことを検索したり・・・<br>
+      <p class="text-base md:text-xl mb-4 font-bold">"スマホ"をうまく使って、暮らしを便利にしよう！</p>
+      <p class="text-base md:text-xl mb-4">スマホで楽しく会話したり、<br class="br-sp">写真を撮ったり、<br class="br-sp">インターネットを使って調べもの・・・<br>
         スマホの活用方法が学べる講習会を<br class="br-sp">開催します。<br>
         <span class="font-bold">参加費無料</span>、お気軽にご参加ください。
       </p>
     </div>
     <div class="flex flex-row justify-center items-center content-center text-center mt-8">
       <nuxt-img
-        src="/img/Conference.png"
+        src="/img/9435_color.png"
         quality="70"
         sizes="md:100% lg:500px"
         class="block m-auto"

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between font-body fadein-anime bg-email">
+  <div class="flex flex-col justify-between font-body fadein-anime bg-grey">
     <!--<div id="loading">-->
     <!--  <div id="loader">-->
     <!--    <div id="shadow"></div>-->
@@ -135,6 +135,12 @@
   background-image: url("~/assets/email-pattern.png");
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
+}
+.bg-grey {
+  /*background-image: url("~/assets/email-pattern.png");*/
+  background: #f5f5f7;
+  /*background-color:rgba(255,255,255,0.5);*/
+  /*background-blend-mode:lighten;*/
 }
 </style>
 <script>
