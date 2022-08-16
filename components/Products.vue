@@ -59,7 +59,7 @@
     <!--</div>-->
     <div class="mt-4 md:mt-10">
       <section>
-        <a href="https://reserva.be/rantan" target="_blank" class="btn_02">講習会のご予約はこちらから</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqfZlV7zcNnBatEjR5GZRN9PajIn42Ue86L_m3D9af84Ab1g/viewform" target="_blank" class="btn_02">講習会のご予約はこちらから</a>
       </section>
     </div>
   </div>
