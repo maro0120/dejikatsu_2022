@@ -148,7 +148,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style>
     .c-loader-bg {
       @apply fixed top-0 left-0 w-full h-full z-50 grid place-items-center pointer-events-none;
       background-color: #A9A9B7;
@@ -165,9 +165,9 @@ export default {
     }
 
     .c-loader-dot>span+span {
-      @apply ml-12
+      @apply ml-12;
     }
-    .gsap-title span {
+    .gsap-title > span {
       /* transformプロパティを有効にするため */
       display: inline-block;
     }
