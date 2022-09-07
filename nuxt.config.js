@@ -61,6 +61,7 @@ export default {
             '2xl': 1536,
         },
     }],
+    'nuxt-gsap-module',
   ],
   optimizedImages: {
     optimizeImages: true,
