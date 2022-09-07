@@ -101,12 +101,13 @@ export default {
           stagger: {
             amount: 1,
             from: "start",
-            ease: "sine.in"
+            ease: "sine.in",
           }
         },
+        "-=0.1"
         ).to(
-        jsLead, {
-          /* 前のアニメーションが完了する0.1秒前に実行 */
+          jsLead, {
+          /* 前のアニメーションが完了する0.2秒前に実行 */
           opacity: 1,
           y: 0,
           stagger: {
@@ -115,6 +116,7 @@ export default {
             ease: "bounce.in"
           }
         },
+        "-=0.2"
       )
     },
   },
@@ -167,5 +169,9 @@ export default {
 
     .c-loader-dot>span+span {
       margin-left: 3rem;
+    }
+    .title-item span {
+      /* transformプロパティを有効にするため */
+      display: inline-block;
     }
 </style>
