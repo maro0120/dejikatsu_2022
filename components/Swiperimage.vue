@@ -7,7 +7,6 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
-          loading="lazy"
           format="webp"
         />
         </div>
@@ -17,7 +16,6 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
-          loading="lazy"
           format="webp"
         />
         </div>
@@ -27,7 +25,6 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
-          loading="lazy"
           format="webp"
         />
         </div>
