@@ -68,7 +68,7 @@ export default {
         opacity: 0,
         y: -50
       });
-      const tl = gsap.timeline();
+      const tl = gsap.timeline({scrollTrigger: gsapTitle});
       tl.to(
         /* ドット */
         /* 0.8秒後に起動 */
