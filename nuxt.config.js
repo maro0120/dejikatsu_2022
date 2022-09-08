@@ -63,6 +63,11 @@ export default {
     }],
     'nuxt-gsap-module',
   ],
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
   optimizedImages: {
     optimizeImages: true,
     optimizeImagesInDev: true,
@@ -113,6 +118,7 @@ export default {
     baseUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_API_URL : undefined,
     newsUrl: process.env.NODE_ENV !== 'production' ? process.env.MICROCMS_NEWS_URL : undefined
   },
+  
   // serverMiddleware: {
   //   '/_ipx': '~/server/middleware/ipx.js'
   // },

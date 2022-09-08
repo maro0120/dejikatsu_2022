@@ -13,7 +13,7 @@
         <LazyGooglemap />
         <Information />
         <LazyTable />
-        <Reserve />
+        <Reserve ref="reserve"/>
         <LazySwiperimage />
       </div>
     </div>
@@ -24,82 +24,87 @@
 if (process.browser) { // Here we introduce... According to the environment wow.js
   var {WOW} = require('wowjs')
 }
-  // import Hero from '../components/Hero.vue'
-  // import Introduction from '../components/Introduction.vue'
-  // import News from '../components/News.vue'
-  // import Social from '../components/Social.vue'
-  // import Projects from '../components/Projects.vue'
-  // import Information from '../components/Information.vue'
-  // import Products from '../components/Products.vue'
-  // import Googlemap from '../components/Googlemap.vue'
-  // import Instagram from '../components/Instagram.vue'
-  // import Table from '../components/Table.vue'
-  // import Swiperimage from '../components/Swiperimage.vue'
-  // import axios from 'axios'
-  // import IntersectionObserver from "../components/IntersectionObserver"
 
-    export default {
-  //     components:{
-  //       Introduction, News, Information, Social, Projects, Products, IntersectionObserver, Googlemap, Table, Swiperimage
-  //     },
-  //     // head() {
-  //     //   return {
-  //     //     script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-  //     //   };
-  //     // },
-  //     data() {
-  //       return {
-  //         items: []
-  //       };
-  //     },
-  //     async asyncData({ $config }) {
-  //       const { data } = await axios.get(
-  //         $config.baseUrl,
-  //         {
-  //           headers: { "X-API-KEY": $config.apiKey }
-  //         }
-  //       );
-  //       const events = []
-  //       for (var i=0; i < data.contents.length ; ++i){
-  //         let colors = ""
-  //         switch(data.contents[i]['color'][0]) {
-  //           case "紫":
-  //             colors = '#FF99FF'
-  //             break
-  //           case "オレンジ":
-  //             colors = '#FF9933'
-  //             break
-  //           case "青":
-  //             colors = '#66CCFF'
-  //             break
-  //           case "緑":
-  //             colors = '#66CC66'
-  //             break
-  //           default:
-  //             colors = '#F0F0F0'
-  //             break
-  //         }
-  //         let ev = {
-  //           id : i,
-  //           title : data.contents[i]['title'],
-  //           start : data.contents[i]['eventDate'],
-  //           detail : data.contents[i]['detail'],
-  //           backgroundColor : colors
-  //         }
-  //         events.push(ev)
-  //       }
-  //       return {
-  //         items: events
-  //       };
-  //     },
-      mounted() {
-        this.$nextTick(() => {
-          if (process.browser) { // On the page mounted In the life cycle Instantiate according to the environment WOW
-            new WOW({animateClass: 'animate__animated',live: false, }).init()
-          }
+  export default {
+    mounted() {
+      this.$nextTick(() => {
+        if (process.browser) { // On the page mounted In the life cycle Instantiate according to the environment WOW
+          new WOW({
+            animateClass: 'animate__animated',
+            live: false,
+          }).init()
+        }
+      });
+      console.log(this.$refs.reserve.$refs.reserveTitle);
+      this.index();
+    },
+    methods: {
+      index() {
+        const gsap = this.$gsap
+        // 親コンポーネントから子コンポーネントを操作
+        const reserveTitle = this.$refs.reserve.$refs.reserveTitle;
+        const contactTitle = this.$refs.reserve.$refs.contactTitle;
+        this.$ScrollTrigger.matchMedia({
+          // スマホは順番
+          "(max-width: 767px)": function () {
+            gsap.set(
+              [reserveTitle, contactTitle], {
+                opacity: 0,
+                y: 60
+              }, );
+            const tl = gsap.timeline({
+              scrollTrigger: reserveTitle
+            });
+            tl.to(reserveTitle, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              stagger: {
+                from: "start",
+                ease: "sine.in",
+              }
+            }, ).to(contactTitle, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              stagger: {
+                from: "start",
+                ease: "sine.out",
+              }
+            }, );
+          },
+          // PCは同時表示
+          "(min-width: 768px)": function () {
+            gsap.set(
+              [reserveTitle, contactTitle], {
+                opacity: 0,
+                y: 60
+              }, );
+            const tl = gsap.timeline({
+              scrollTrigger: reserveTitle
+            });
+            tl.to(reserveTitle, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              stagger: {
+                from: "start",
+                ease: "sine.in",
+              }
+            }, ).to(contactTitle, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              stagger: {
+                from: "start",
+                ease: "sine.out",
+              }
+            }, '<');
+          },
         });
-      },
-    };
+      }
+    }
+  };
 </script>
 
 <style>
