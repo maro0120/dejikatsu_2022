@@ -7,6 +7,8 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
+          loading="lazy"
+          format="webp"
         />
         </div>
         <div class="keen-slider__slide number-slide2">
@@ -15,6 +17,8 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
+          loading="lazy"
+          format="webp"
         />
         </div>
         <div class="keen-slider__slide number-slide3">
@@ -23,6 +27,8 @@
           quality="70"
           sizes="md:100% lg:500px"
           class="block m-auto"
+          loading="lazy"
+          format="webp"
         />
         </div>
       </div>
