@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="text-center text-gray-700 mb-8">
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-10 gsap-title">久米南町　スマホ教室</h2>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-6 gsap-title">久米南町　スマホ教室</h2>
       <p class="text-base md:text-xl mb-4 font-bold gsap-lead">"スマホ"をうまく使って、暮らしを便利にしよう！</p>
       <div class="gsap-item">
         <p class="text-base md:text-xl mb-4">スマホで楽しく会話したり、<br class="br-sp">写真を撮ったり、<br class="br-sp">インターネットを使って調べもの・・・<br>

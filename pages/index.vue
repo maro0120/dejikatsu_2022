@@ -6,11 +6,11 @@
       </div>
       <div class="mt-16">
         <Products />
-        <LazyGooglemap />
+        <Googlemap />
         <Information />
-        <LazyTable />
+        <Table />
         <Reserve ref="reserve" />
-        <LazySwiperimage />
+        <Swiperimage />
       </div>
     </div>
   </div>
