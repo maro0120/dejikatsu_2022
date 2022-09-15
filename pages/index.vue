@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="wrapper md:px-10 pt-10">
-      <div class="header mt-5">
+      <div class="header">
         <Introduction />
       </div>
       <div class="mt-16">
