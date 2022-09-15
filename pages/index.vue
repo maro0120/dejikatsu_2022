@@ -1,19 +1,15 @@
 <template>
   <div id="home">
-    <!--<Hero />-->
     <div class="wrapper md:px-10 pt-10">
       <div class="header mt-5">
         <Introduction />
-        <!--<News />-->
-        <!--<full-calendar v-bind:event="items"/>-->
       </div>
       <div class="mt-16">
         <Products />
-        <!--<Instagram />-->
         <LazyGooglemap />
         <Information />
         <LazyTable />
-        <Reserve ref="reserve"/>
+        <Reserve ref="reserve" />
         <LazySwiperimage />
       </div>
     </div>
@@ -21,21 +17,8 @@
 </template>
 
 <script>
-if (process.browser) { // Here we introduce... According to the environment wow.js
-  var {WOW} = require('wowjs')
-}
-
   export default {
     mounted() {
-      this.$nextTick(() => {
-        if (process.browser) { // On the page mounted In the life cycle Instantiate according to the environment WOW
-          new WOW({
-            animateClass: 'animate__animated',
-            live: false,
-          }).init()
-        }
-      });
-      console.log(this.$refs.reserve.$refs.reserveTitle);
       this.index();
     },
     methods: {
@@ -46,7 +29,7 @@ if (process.browser) { // Here we introduce... According to the environment wow.
         const contactTitle = this.$refs.reserve.$refs.contactTitle;
         this.$ScrollTrigger.matchMedia({
           // スマホは順番
-          "(max-width: 767px)": function () {
+          "(max-width: 767px)": function() {
             gsap.set(
               [reserveTitle, contactTitle], {
                 opacity: 0,
@@ -74,7 +57,7 @@ if (process.browser) { // Here we introduce... According to the environment wow.
             }, );
           },
           // PCは同時表示
-          "(min-width: 768px)": function () {
+          "(min-width: 768px)": function() {
             gsap.set(
               [reserveTitle, contactTitle], {
                 opacity: 0,
