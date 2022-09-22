@@ -19,20 +19,20 @@
   </div>
 </template>
 <script>
-  import "keen-slider/keen-slider.min.css"
-  import KeenSlider from "keen-slider"
+  // import "keen-slider/keen-slider.min.css"
+  // import KeenSlider from "keen-slider"
 
-  export default {
-    name: "Slider",
-    mounted() {
-      this.slider = new KeenSlider(this.$refs.slider, {
-        loop: true,
-      })
-    },
-    beforeDestroy() {
-      if (this.slider) this.slider.destroy()
-    },
-  }
+  // export default {
+  //   name: "Slider",
+  //   mounted() {
+  //     this.slider = new KeenSlider(this.$refs.slider, {
+  //       loop: true,
+  //     })
+  //   },
+  //   beforeDestroy() {
+  //     if (this.slider) this.slider.destroy()
+  //   },
+  // }
 </script>
 
 <style scoped>
