@@ -1,9 +1,9 @@
 <template>
   <div class="my-5">
     <div class="gallery">
-      <nuxt-img src="/img/image1-2.png" quality="70" sizes="100%" class="block m-auto" format="webp" loading="lazy"/>
-      <nuxt-img src="/img/image1-3.png" quality="70" sizes="100%" class="block m-auto" format="webp" loading="lazy"/>
-      <nuxt-img src="/img/image1-4.png" quality="70" sizes="100%" class="block m-auto" format="webp" loading="lazy"/>
+      <nuxt-img src="/img/image1-2.png" quality="70" sizes="100%" class="block m-auto" format="webp" />
+      <nuxt-img src="/img/image1-3.png" quality="70" sizes="100%" class="block m-auto" format="webp" />
+      <nuxt-img src="/img/image1-4.png" quality="70" sizes="100%" class="block m-auto" format="webp" />
     </div>
     <!--<div ref="slider" class="keen-slider">-->
     <!--  <div class="keen-slider__slide number-slide1">-->
